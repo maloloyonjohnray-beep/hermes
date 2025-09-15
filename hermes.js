@@ -161,7 +161,7 @@
       document.getElementById('modalVERITAS').style.display = "none"; 
       document.getElementById('modalSTELLARIS').style.display = "none";
       document.getElementById('modalNEXA').style.display = "none";
-      document.getElementById('modalSOLANA').style.display = "none";   
+      document.getElementById('modalSOLANA1').style.display = "none";   
     }
 
     // Close the modal when clicking outside of it
@@ -187,3 +187,4 @@
       event.currentTarget.classList.add('active');
 
     }
+
