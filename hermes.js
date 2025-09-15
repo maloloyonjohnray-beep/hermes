@@ -89,7 +89,45 @@
     else if (content === 'ARES') {
         document.getElementById('modalARES').style.display = "block"; // Show ROW SCORE Files
       }   
+    else if (content === 'JOBS') {
+        document.getElementById('modalJOBS').style.display = "block"; // Show ROW SCORE Files
+      }     
+    
+    else if (content === 'FRANKLIN') {
+        document.getElementById('modalFRANKLIN').style.display = "block"; // Show ROW SCORE Files
+      }
         
+    else if (content === 'RIZAL') {
+        document.getElementById('modalRIZAL').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'EINSTEIN') {
+        document.getElementById('modalEINSTEIN').style.display = "block"; // Show ROW SCORE Files
+      }    
+        
+     else if (content === 'EQUINOX') {
+        document.getElementById('modalEQUINOX').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'MERAKI') {
+        document.getElementById('modalMERAKI').style.display = "block"; // Show ROW SCORE Files
+      }   
+        
+    else if (content === 'VERITAS') {
+        document.getElementById('modalVERITAS').style.display = "block"; // Show ROW SCORE Files
+      }     
+    
+    else if (content === 'STELLARIS') {
+        document.getElementById('modalSTELLARIS').style.display = "block"; // Show ROW SCORE Files
+      }
+        
+    else if (content === 'NEXA') {
+        document.getElementById('modalNEXA').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'SOLANA') {
+        document.getElementById('modalSOLANA').style.display = "block"; // Show ROW SCORE Files
+      }     
         
         
         
@@ -113,7 +151,17 @@
       document.getElementById('modalEUROPA').style.display = "none"; 
       document.getElementById('modalACHELOUS').style.display = "none";
       document.getElementById('modalARTEMIS').style.display = "none";
-      document.getElementById('modalARES').style.display = "none";     
+      document.getElementById('modalARES').style.display = "none"; 
+      document.getElementById('modalJOBS').style.display = "none"; 
+      document.getElementById('modalFRANKLIN').style.display = "none";
+      document.getElementById('modalRIZAL').style.display = "none";
+      document.getElementById('modalEINSTEIN').style.display = "none";   
+      document.getElementById('modalMERAKI').style.display = "none";
+      document.getElementById('modalEQUINOX').style.display = "none"; 
+      document.getElementById('modalVERITAS').style.display = "none"; 
+      document.getElementById('modalSTELLARIS').style.display = "none";
+      document.getElementById('modalNEXA').style.display = "none";
+      document.getElementById('modalSOLANA').style.display = "none";   
     }
 
     // Close the modal when clicking outside of it
@@ -137,4 +185,5 @@
       // Show selected tab and make button active
       document.getElementById(tabId).classList.add('active');
       event.currentTarget.classList.add('active');
+
     }
