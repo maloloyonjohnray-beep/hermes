@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School System Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hermes Logo Header -->
+  <header style="text-align:left; margin-bottom: 30px;">
+    <a href="#hs-admin" style="text-decoration: none; display: inline-block;">
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyInPWqk5GFId8nbuQCjqMYBwTClpqdIS9hw&s" alt="Hermes Logo" style="height: 50px; width: 50px; margin-right: 10px;">
+        <h1 style="color: #d4a500; margin: 0;">Hermes</h1>
+      </div>
+      <p style="color: #d4a500; font-size: 1.2em;">One Site For All</p>
+    </a>
+<!--      <div style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">-->
+    <p1 style="color: #d4a500; font-weight:bold;  font-size: 1.0em; margin-top: 50px; float: right; text-align: right; background-color: #5a2400; padding:8px; border-radius: 5px;">
+        <a id="calendarlink" href="https://1drv.ms/x/c/62954C3AE818D381/AT5yzEAE_XFJjXcTMO92MyE?e=JyTwV6" target="_blank">SCHOOL CALENDAR</a>
+    </p1>
+      
+    <p2 style="color: #d4a500; font-weight:bold; font-size: 1.0em; margin-top: 50px; float: right; margin-right: 10px; text-align: right; background-color: #5a2400; padding:8px; border-radius: 5px;">
+        <a href="https://1drv.ms/x/c/62954c3ae818d381/EbIzrJwEeGxLhbJMNziNGekBY_aNOKOhA5VMWMkumtC35g?e=4rmv31" target="_blank">HOUSE ACCUMULATED  POINTS</a>
+    </p2>  
+<!--</div>-->
+  </header>
+
+  <div class="tabs">
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="openTab('hs-admin')">ADMIN</button>
+      <button class="tab-button" onclick="openTab('teachers')">FACULTY</button>
+      <button class="tab-button" onclick="openTab('peac-deped')">PEAC/DepEd</button>
+      <button class="tab-button" onclick="openTab('students')">WORKING ASSISTANT</button>
+      <button class="tab-button" onclick="openTab('memorandum')">MEMORANDUM</button>
+    </div>
+
+    <div id="students" class="tab-content">
+      <div class="column">
+<!--      <h2>WORKING ASSISTANT</h2>-->
+      <div class="card" >
+        📷 <span>HIGH SCHOOL CAPTURED MOMENTS</span>
+      </div>
+      <div class="card">
+          🌐 <span>ONLINE MONITORING SYSTEM <a id="omsLink" href="https://1drv.ms/x/c/62954c3ae818d381/EYHTGOg6TJUggGJ08gIAAAAB7f8J7Ffu8gvSFOrjRWT_Qg?e=iDIWg3" target="_blank">(OMS)</a></span>
+      </div>
+      <div class="card" >
+        👥 <span>TRUANCY REFERRALS</span>
+      </div>
+    </div>
+
+    </div>
+
+    <div id="teachers" class="tab-content">
+      <div class="column">
+<!--      <h2>Teachers</h2>-->
+      <div class="card" >
+        🕒 <span>CLASS PROGRAMS</span>
+      </div>
+      <div class="card" >
+        📦 <span>CONSOLIDATED GRADES</span>
+      </div>
+<!--
+      <div class="card" >
+        👤 <span>FACULTY PROFILE</span>
+      </div>
+      <div class="card">
+        📁 <span>TEACHER’S FILE</span>
+      </div>
+-->
+<!--
+      <div class="card" onclick="openModal('Learning Modules')">
+        📁 <span>Learning Modules</span>
+      </div>
+-->
+      <div class="card" onclick="openModal('Raw Scores')">
+        📁 <span>Raw Scores</span>
+      </div>
+          
+      <div class="card" onclick="openModal('ECR')">
+        📁 <span>E-Class Record</span>
+      </div>
+<!--
+      <div class="card" onclick="openModal('TEACHER\'S CALENDAR')">
+        📁 <span>TEACHER'S CALENDAR</span>
+      </div>
+      <div class="card" onclick="openModal('TEACHER DAILY MONITOR')">
+        📁 <span>TEACHER DAILY MONITOR</span>
+      </div>
+      <div class="card" onclick="openModal('TEACHING')">
+        📁 <span>TEACHING</span>
+      </div>
+      <div class="card" onclick="openModal('TEST QUESTIONNAIRE')">
+        📁 <span>TEST QUESTIONNAIRE</span>
+      </div>
+      <div class="card" onclick="openModal('TABLE OF SPECIFICATIONS')">
+        📁 <span>TABLE OF SPECIFICATIONS</span>
+      </div>
+      <div class="card" onclick="openModal('TEACHER TIPS')">
+        📁 <span>TEACHER TIPS</span>
+      </div>
+-->
+    </div>
+
+    </div>
+
+    <div id="hs-admin" class="tab-content active">
+      <div class="column">
+<!--      <h2>HS Admin</h2>-->
+      <div class="card" >
+        📝 <span>APPRAISAL (EVALUATION FORMS)</span>
+      </div>
+      <div class="card" >
+        📋 <span>ENTRANCE EXAMINATION</span>
+      </div>
+      <div class="card" >
+        📄 <span>HIGH SCHOOL FORMS</span>
+      </div>
+    <div class="card">
+        📄 <span>GUIDANCE OFFICE  <a href="https://1drv.ms/f/c/62954c3ae818d381/EoIhyxT4PSlFvJ1IZqMz7DoB2Gf8cI8ibE1I-UhYApTu0g" target="_blank">[FORM]</a></span>
+      </div>
+          <div class="card" >
+        📄 <span>REGISTRAR</span>
+      </div>
+          <div class="card" >
+        📄 <span>ASSISTANT PRINCIPAL <a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGJaZAIAAAABU8s_TPZWy-3BSk4fPo2TWA?e=BC4gdp" target="_blank">[FORM]</a></span>
+      </div>
+          <div class="card" >
+        📄 <span>HS CLERK <a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGKkEQAAAAABlMrIudoGCG2t5yUTct-PQA?e=XPKL0e" target="_blank">[FORM]</a></span>
+      </div>
+          <div class="card" onclick="openModal('LIS COORDINATOR')">
+        📄 <span>LIS COORDINATOR </span>
+      </div>
+      <div class="card" >
+        📄 <span>DATA PRIVACY OFFICER <a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGJ05gEAAAABcmSvkgHwisOAjkqDRVioqQ?email=joshuavaliente15%40gmail.com&e=AlUFVD" target="_blank">[FORM]</a></span>
+      </div>      
+      <div class="card" onclick="openModal('DOCUMENTS')">
+        📄 <span>DOCUMENTS</span>
+      </div>
+<!--
+      <div class="card" onclick="openModal('SCHOOL CALENDAR SY 2022-2023')">
+        📅 <span>SCHOOL CALENDAR SY 2022-2023</span>
+      </div>
+-->
+    </div>
+
+    </div>
+
+    <div id="peac-deped" class="tab-content">
+      <div class="column">
+<!--      <h2>PEAC/ DepEd</h2>-->
+      <div class="card" onclick="openModal('DEPED MEMORANDUMS')">
+        🏫 <span>DEPED MEMORANDUMS</span>
+      </div>
+      <div class="card" onclick="openModal('PEAC INSET 2021')">
+        👁️ <span>PEAC INSET 2021</span>
+      </div>
+    </div>
+    </div>
+      
+ <div id="memorandum" class="tab-content">
+      <div class="column">
+<!--      <h2>WORKING ASSISTANT</h2>-->
+      <div class="card" >
+          📋 <span><a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGJq0gEAAAABOhTSa3UZGy3GeLISiT5dqQ?e=CwCeVj" target="_blank">MEMORANDUM S. 2023</a></span>
+      </div>
+      <div class="card" >
+          📋 <span><a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGJq0gEAAAABOhTSa3UZGy3GeLISiT5dqQ?e=CwCeVj" target="_blank">MEMORANDUM S. 2024</a></span>
+      </div>
+       <div class="card" >
+           📋 <span><a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGIKrwEAAAABGZ0rD3OlB9UBqGX7LURI4g?e=75buuK" target="_blank">MEMORANDUM S. 2025</a></span>
+      </div>
+<!--
+      <div class="card" onclick="openModal('TRUANCY REFERRALS')">
+        👥 <span>TRUANCY REFERRALS</span>
+      </div>
+-->
+    </div>
+
+    </div>      
+      
+</div>
+    
+    
+    
+
+  <!-- Modal Structure -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText"></p>
+      <div id="modalOmsLink" style="display: none;">
+        <a href="https://1drv.ms/x/c/62954c3ae818d381/EYHTGOg6TJUggGJ08gIAAAABtdMjjx3YCXUfYxx4EM1Xnw?e=AeYao7" target="_blank">Access OMS System</a>
+      </div>
+      <div id="modalGrades" style="display: none;">
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><div class="circle">8</div>GEMINI</div>
+          <div class="grade"><div class="circle">9</div>PINK</div>
+          <div class="grade"><div class="circle">10</div>APPLE</div>
+          <div class="grade"><div class="circle">11</div>ABM</div>
+          <div class="grade"><div class="circle">12</div>ABM</div>
+
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><div class="circle">8</div>LEO</div>
+          <div class="grade"><div class="circle">9</div>GREEN</div>
+          <div class="grade"><div class="circle">10</div>BERRY</div>
+          <div class="grade"><div class="circle">11</div>GAS</div>
+          <div class="grade"><div class="circle">12</div>GAS 1</div>
+
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><div class="circle">8</div>LIBRA</div>
+          <div class="grade"><div class="circle">9</div>INDIGO</div>
+          <div class="grade"><div class="circle">10</div>GRAPES</div>
+          <div class="grade"><div class="circle">11</div>HUMSS</div>
+          <div class="grade"><div class="circle">12</div>GAS 2</div>
+
+          <div class="grade"><div class="circle">7</div>ORCHID</div>
+          <div class="grade"><div class="circle">8</div>TAURUS</div>
+          <div class="grade"><div class="circle">9</div>ORANGE</div>
+          <div class="grade"><div class="circle">10</div>MELON</div>
+          <div class="grade"><div class="circle">11</div>ICT</div>
+          <div class="grade"><div class="circle">12</div>H.E.</div>
+
+          <div class="grade"><div class="circle">7</div>ROSE</div>
+          <div class="grade"><div class="circle">8</div>VIRGO</div>
+          <div class="grade"><div class="circle">9</div>RED</div>
+          <div class="grade"><div class="circle">10</div>PEACH</div>
+          <div class="grade"><div class="circle">11</div>STEM</div>
+          <div class="grade"><div class="circle">12</div>HUMSS 1</div>
+        </div>
+      </div>
+      
+        <div id="modalTeachersFile" style="display: none;">
+        <header>
+            <div class="title">Teacher's Files</div>
+        </header>
+
+        <div class="grid">
+          <div class="name-box">Abendan, Ethel Grace</div>
+          <div class="name-box">Abenaza, Carenh</div>
+          <div class="name-box">Andrino, Junlie</div>
+          <div class="name-box">Aragon, Renita</div>
+          <div class="name-box">Argawanon, Jehan Marie</div>
+          <div class="name-box">Arpon, Jasper</div>
+          <div class="name-box">Artiaga, Janel</div>
+          <div class="name-box">Asingua, Analie</div>
+          <div class="name-box">Cabreros, Gerlyn</div>
+          <div class="name-box">Camay, Niña</div>
+          <div class="name-box">Catadman, Jesseca</div>
+          <div class="name-box">Catagbo, Edmark</div>
+          <div class="name-box">Catana, Aljane</div>
+          <div class="name-box">Capuras, Claire</div>
+          <div class="name-box">Conson, Shane</div>
+          <div class="name-box">Cotejo, Hendra Joy</div>
+        </div>
+      </div>
+        
+        
+<!--        RAW SCORE AREA-->
+        <div id="modalRawScore" style="display: none;">
+        <header>
+                     <div class="title">RAW SCORES</div>
+        </header>
+
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ES7jSjVHVMhMhlExfcmFF0UBcs1sCphs-SjKYwCYpj_94g" target="_blank">[ARALING PANLIPUNAN 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ed1oFGEvRnZNghs-xUTUzUoBO4qLT7wLh6EMQl7lCJ9yMQ" target="_blank">[ARALING PANLIPUNAN 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EZdjgnVLIJBLtywMHfOhSq8BlDmmhpNRg36asKUxfmOo4w" target="_blank">[ARALING PANLIPUNAN 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETgO_Z8pqMxJuyUl_8XrCIQB8XYOmN4nLJ5rsqLiht9l0A" target="_blank">[ARALING PANLIPUNAN 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXCTjCTAgONHmixVuSeo6NgBqiquD9VDMLoWj7VPorLi2w" target="_blank">[21ST CENTURY LITERATURE 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EW0O5foT29dImJJ6b2TIHOgBeK4hsEJ2LBunymAiYAraGg" target="_blank">[ENG. FOR ACADEMICS 12]</a></div>
+
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EWFkfVnq37tJkdHbrsb55loB9lHuzv78F0fscz8O4jaM4Q" target="_blank">[ENGLISH 7]</a></div>
+            <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EZN_okUEqwtFvg7XTXLaivQBCy2rEGFefwo-RIZPiEQZhg" target="_blank">[ENGLISH 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EU5DgvinG4BHlPUGAdRujVMB2rPvZuAsVQt8vtQAN8vnLA" target="_blank">[ENGLISH 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EYcAtaxwTwtElaL_FObG2PgB_o_LlGRaA2k1_lg2m9P1bg" target="_blank">[ENGLISH 10]</a></div>
+         <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ec3q1G3qmqhDjtP7Bn8KVpIB_6HugkhT3Nqu5LesvJE2Kw" target="_blank">[[EARTH & LIFE SCIENCE 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EaO3Rl6YMdhDnFD_PwA4njIBerBBsz8tbuUD-ZREiWY3Yw" target="_blank">[[PAGSULAT SA FILIPINO 12]</a></div>
+
+          <div class="grade">RAW SCORES  SY2025-26 <a href="#" target="_blank">[FILIPINO 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EQQtmZS_mDtCjYdCkWRZcBsBL_LaMCmLPVvIyY4x0ZKrTw" target="_blank">[FILIPINO 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EZNmp1l_ScpNrP5iLiNhdVABzhbLPn6tsIx2t9TE80hzvQ" target="_blank">[FILIPINO 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ESZk8_-WU9RIvZgIS1e4nyMBa5cqPus0cIYIjLrZWHLYuw" target="_blank">[FILIPINO 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXA5xPW6vX5Nl8ZGOYAcB30B1MavUfTh-PZxvysKDwPLwg" target="_blank">[EARTH SCIENCE 11]</a></div>
+         <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcXtVPEIvb5Ask7vJDWtOlEBzICCaxfGteiWEP1ebCwDbg" target="_blank">[PRACTICAL RESEARCH(2) 12]</a></div>
+
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EVlqjg9MZV5HjUxRkcrUhsoBxQFQ1WcuOR6b5vLHFxjmBQ" target="_blank">[MAPEH 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcTGFyhGLSBHjwyHgZbTbLUB_EBMWFdyUeEiTqFEXxAvSg" target="_blank">[MAPEH 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcdTMCHA5YZPlq5OpFYdHt4B3gOMoqtK0GkH1Mj4mlE6Ww" target="_blank">[MAPEH 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ESZk8_-WU9RIvZgIS1e4nyMBa5cqPus0cIYIjLrZWHLYuw" target="_blank">[MAPEH 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EbZKyXc0T2dGpYjY9tHfnmQBDI-gxzLIkV8T4UHZBskMdw" target="_blank">[GENERAL MATHEMATICS 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXtP4mTPAkhBkzLTJ0nHxtcB0fIHjCEpabj33uxam_eA_A" target="_blank">[CONTEMP. PHILIPPINE ARTS 12]</a></div>
+
+            <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Edzlh9Two25Gk-jc1cIDL9kBq8DvWOa8x6uDULCo0k2Lfg?e=FtSaLl" target="_blank">[MATH 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EVnL8SsnIvlBmWU8n6bHLIIBmNkGkHonfTYH55f8rxA8JA" target="_blank">[MATH 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETLHnruZbO5Gov-aRltPTFwBVmgbuw3TXyyrYU1v-U4QQg" target="_blank">[MATH 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EdrWAVaY99VKr1AC_htySC0BWa4veTYZExWx3IjUHfDdSA" target="_blank">[MATH 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EQ1all7QJOVClRttlHjgSw0B5OzmEP2bu_w-NZhdjd_rqw" target="_blank">[INTRO. TO PHILOSOPHY  11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETcbcs7FHcNJp4-rQoYp140BnYyn_2l4G_7lx4ByCZCR9g" target="_blank">[MEDIA & INFORMATION LIT. 12]</a></div>
+            
+            <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EWA_H9BY0FpAkIRhnJedSoMBt4MJ1MlO2efFXAzSpaD99g" target="_blank">[SCIENCE 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EYdQztNUGadOoaHDcRXH8u0BncTbR7J57NAB6ssEzM4UyQ" target="_blank">[SCIENCE 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETVYcyQgjttPoo16_mePi5UBzyodFNexjHWIAc7U2qUkxg" target="_blank">[SCIENCE 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EUN-BqEdmjxHiOiRU0wHlr8BU1mjRtpnSsQfrOWy2a-pyw" target="_blank">[SCIENCE 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Eeb7JHuklHlDkxHJgt-YOsgB25SCiGq9MkhK5jQfXCecVw" target="_blank">[KOMUNIKASYON AT PANANALIKSIK 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EUVdLCgwrpxMmhnkaj3GoMIBQvK-8EerdPdGxs1C96MHMw" target="_blank">[PHYSICAL EDUCATION(3) 12]</a></div>
+            
+            <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ec_gwSF_JMdFpj74EeL1cFIBnSNeXtGK4KNZlr070fttUg" target="_blank">[TLE 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EetLxOxUaoBPsDdLYTUtY78BzAyHeioqD9TAahAoBi7LEw" target="_blank">[TLE 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EWgRxdpfE-JAlAMthXzvtrAB8ywHjgfcZ1wLv8oIYWc_Sg" target="_blank">[TLE 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EdH7x33CAgRNi02GbxMFRm4BgMoFQTBfsLpJsrCfeSNNwQ" target="_blank">[TLE 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EQ0y6cFVL2pKpzNOm0BYOKQBscgkJJj9mUy20gtUsfUc5A" target="_blank">[ORAL COMMUNICATION 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ERBp0of8Bh1FsRsb80BD2HcBN7J0_oPXAP8VMxsRtweeBg" target="_blank">[PERSONAL DEVELOPMENT 12]</a></div>
+            
+             <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EYnXLE8KZd9Dsk-zPpH7T54BnkgCF9kPYzvYX-Kusiaq9Q" target="_blank">[VALUES EDUCATION 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EaNjjWukR_lBgUI2i16sSAsBAf_h4J4vHE5qa4JoyXKbVQ" target="_blank">[VALUES EDUCATION 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXfEzwr7GhlIrgttv7krH-QB_oHeavR5BMOYEcRDvMMYog" target="_blank">[VALUES EDUCATION 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcWJNmcHQkhPhp14IT7FbKABH8ulVzU_uC9_uQpOLXUTfA" target="_blank">[VALUES EDUCATION 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETttBT1WqVxAlFVzLAD4QxsB5ZMic-B_K6u6o4rLOY6aTA" target="_blank">[PHYSICAL EDUCATION (1)  11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETgrnrCT1iVIjG443JHXWx8BcCc3UAsB89EiMNdvJUUy_Q" target="_blank">[ANIMATION(3) 12]</a></div>
+            
+             <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EUQBmf2IU5pOikTnSs4-A64BFQ4qluhSI8xVJybhy50uwA" target="_blank">[HGP 7]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETRK-ynI_bNApF0TJIWrqzkBkBcHh0DOuqh7pIxdprD7_g" target="_blank">[HGP 8]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EX2C8Uz3CbJBhPkg0IF3AFkBmdRSMcrlRWTxzSxP11-Dsg" target="_blank">[HGP 9]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ea0BxNOuUBhEiT0UksuUe7QBrqcwhSUmuFm-xg6N5g_YtA" target="_blank">[HGP 10]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ESYSFPU24mlNiIF5fwHjj4IBm_ELpL2ISCHbiQD6pLDTaw" target="_blank">[BUSINESS MATHEMATICS 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Efp2QAfpz5lJpYRVlMP9So8BSlUGkwr-CtWEtF-hI24neg" target="_blank">[APPLIED ECONOMICS 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EewwGs2ku-1Cmf-RBiH0blABvD9EdtZtPZQ9UrYmlY4qKQ" target="_blank">[DISS 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Efgtt9HnIOdEnrtbBGDS214B_qmvNWUIZ0skyuxVifol2w" target="_blank">[BREAD & PASTRY(2) 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXwrJjSZzldEhzR7ebLeoesBmRmO7Mdr2mlpiqgYNLL_jA" target="_blank">[GENERAL CHEMISTRY (1) 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EbNSxMFimAdHh4WTUQYn39AB68I4cXvAhMBUOiguaRGeXg" target="_blank">[COMP. PROGRAMMING(3) 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXDkFgAnp4lOuMWk8sxdED8BcAhrg20C5FEhSwKTJOt0nQ" target="_blank">[ORG. & MANAGEMENT 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EQOhzwEtdOdJm-y8SNyZaNkBO4Q_FOOwsFr8sz8TW23nUw" target="_blank">[CREATIVE NON-FICTION 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcJ53Lgzyv9Kjzf_dPFKRSkBdcrzp0KwKP6nvrvhAZ3Ixw" target="_blank">[PHIL. POL. & GOV. 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ETSzJw5kli9AhLhDN2ZK1NIBdA9VEHJ536WA1HpxM3A0pQ" target="_blank">[DIAS 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EapXFT2u9bFAjclyIKwQu_8BA60HdcZ8JCYDRGnjze-p_g" target="_blank">[PRE-CALCULUS 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EV33q3khE-VMi7Xz76bOqecB_lGjJVzB7UnrPoyJRmSkMQ" target="_blank">[FUNDS. OF ABM 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EaIJBAUO4d5NiZ2FeBDGnfEBckxW0TJmMyjZiQJHfAW1HQ" target="_blank">[HGP 11]</a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EfexvgBNPf5IhCavy4xQ4dEBNUsJfVY9ARJxLSSHWk15_g" target="_blank">[GENERAL BIOLOGY(1) 12]</a></div>
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXVzD8EOfZZApiNTF_RH2yABPKAyUXVKmGQPeZ7LDZWeuw" target="_blank">[GENERAL CHEMISTRY(2) 12]</a></div>  
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EcL8w8UbF0ZNrYnR449CUawB5jr84SJSIqtMMYc1za-2Lw" target="_blank">[GENERAL PHYSICS(1) 12]</a></div> 
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ebf4_jPq0NFNl92iesMXJ2MB0p4JrcTO1bMOIYk1o2n9vA" target="_blank">[LOCAL GUIDING(1) 12]</a></div> 
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/Ede-8lmiovpFu_aHKabKwMABo0Xr_lo7-9Ay9LF_oEctZA" target="_blank">[PRINCIPLES OF MARKETING 12]</a></div> 
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EXVUfFjGNGZEiww74FDji5UBL-DtTAsrrB15loH3w-gzGg" target="_blank">[TOURISM PROMOTION(1) 12]</a></div> 
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/ERymkYZIUvhPjoroqk-ndigBIrD_3gQYY-61Oc1aLgHFvw" target="_blank">[TRENDS, NETWORKS & CRIT. 12]</a></div> 
+            
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade">RAW SCORES  SY2025-26 <a href="https://1drv.ms/x/c/62954c3ae818d381/EYkAbWgLS-ZPu2HsH9q6QPQBDyh8xtPr3EY3RUajWFEdvg" target="_blank">[HGP 12]</a></div> 
+        </div>
+      </div>
+        
+        
+<!-- ECR AREA-->
+<div id="modalECR" style="display: none;">
+        <header>
+                     <div class="title">E-CLASS RECORD</div>
+        </header>
+
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade" onclick="openModal('HYDRUS')">GRADE 7 - HYDRUS</div>
+          <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+          <div class="grade"onclick="openModal('AQUILA')">GRADE 7 - AQUILA</div>
+          <div class="grade"onclick="openModal('LYNX')">GRADE 7 - LYNX</div>
+          <div class="grade"></div>
+          <div class="grade"></div>
+            
+          <!-- Grade 8 -->
+          <div class="grade" onclick="openModal('AMETHYST')">GRADE 8 - AMETHYST</div>
+          <div class="grade"onclick="openModal('SAPPHIRE')">GRADE 8 - SAPPHIRE</div>
+          <div class="grade"onclick="openModal('GARNET')">GRADE 8 - GARNET</div>
+          <div class="grade"></div>
+          <div class="grade"></div>
+          <div class="grade"></div>  
+           
+          <!-- Grade 9 -->
+          <div class="grade" onclick="openModal('GANYMEDE')">GRADE 9 - GANYMEDE</div>
+          <div class="grade"onclick="openModal('EUROPA')">GRADE 9 - EUROPA</div>
+          <div class="grade"onclick="openModal('CALLISTO')">GRADE 9 - CALLISTO</div>
+          <div class="grade"></div>
+          <div class="grade"></div>
+          <div class="grade"></div>    
+            
+          <!-- Grade 10 -->
+          <div class="grade" onclick="openModal('ARTEMIS')">GRADE 10 - ARTEMIS</div>
+          <div class="grade"onclick="openModal('ACHELOUS')">GRADE 10 - ACHELOUS</div>
+          <div class="grade"onclick="openModal('ARES')">GRADE 10- ARES</div>
+          <div class="grade"></div>
+          <div class="grade"></div>
+          <div class="grade"></div>   
+            
+         <!-- Grade 11 -->
+          <div class="grade" onclick="openModal('JOBS')">GRADE 11 - JOBS</div>
+          <div class="grade"onclick="openModal('FRANKLIN')">GRADE 11 - FRANKLIN</div>
+          <div class="grade"onclick="openModal('RIZAL')">GRADE 11- RIZAL</div>
+          <div class="grade"onclick="openModal('EINSTEIN')">GRADE 11- EINSTEIN</div>
+          <div class="grade"></div>
+          <div class="grade"></div> 
+            
+        
+         <!-- Grade 12 -->
+          <div class="grade" onclick="openModal('MERAKI')">GRADE 12 - MERAKI</div>
+          <div class="grade"onclick="openModal('EQUINOX')">GRADE 12 - EQUINOX</div>
+          <div class="grade"onclick="openModal('VERITAS')">GRADE 12- VERITAS</div>
+          <div class="grade"onclick="openModal('STELLARIS')">GRADE 12- STELLARIS</div>
+          <div class="grade"onclick="openModal('NEXA')">GRADE 12- NEXA</div>
+          <div class="grade"onclick="openModal('SOLLANA')">GRADE 12- SOLLANA</div>
+            
+            
+            
+<!--
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - PHOENIX</div>
+            <div class="grade"onclick="openModal('PHOENIX')">GRADE 7 - MABINI</div>
+-->
+          
+        </div>
+      </div>        
+        
+
+        <div id="modalDocuments" style="display: none;">
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">MATATAG Curriculum<a href="https://1drv.ms/f/c/62954c3ae818d381/EoHTGOg6TJUggGJ57gEAAAAB1Hqlk03JsvLq0HITYTuIkQ?e=0XPIHe" target="_blank">[CURRICULUM GUIDE]</a></div>
+        <div class="grade">CLASS PROGRAM<a href="https://1drv.ms/x/c/62954c3ae818d381/EYHTGOg6TJUggGKV9QIAAAABWmtN_1QPeHiU-w6xB0GpXw?e=z9nSss" target="_blank"> [FILE]</a></div>
+          <div class="grade">TEACHING LOADS <a href="https://1drv.ms/x/c/62954c3ae818d381/EYHTGOg6TJUggGKX9QIAAAAB9IW-IvYhaYZ-xN5pJZ9eJw?e=qVJhQ3" target="_blank">(SY 2025-2026)</a></div>
+            <div class="grade">Teacher Daily Monitor (TDM) <a href="https://1drv.ms/f/c/62954c3ae818d381/ErXZkp84e7FHjcdQjS4GEGYBwH46YDSfIClZpi8F5MeVlg" target="_blank">(SY 2025-2026)</a></div>
+            <div class="grade">CURRICULUM MAP <a href="https://1drv.ms/f/c/62954c3ae818d381/EumncisHGlxErw16AsFeyj4BgGrLCoK8RfOO6yAVD8iiwQ" target="_blank">(JHS)</a></div>
+            <div class="grade">UNIT LEARNING PLAN <a href="https://1drv.ms/f/c/62954c3ae818d381/Eq0QieabCw9KiQ5TPF47P78BsP3N1j66KzNzU2vL1CH1Cg" target="_blank">(SHS)</a></div>
+            <div class="grade">ADAPTIVE TEACHING GUIDE <a href="https://1drv.ms/f/c/62954c3ae818d381/EguSwtcXvspIs5Ulbw9iFSkB7nEEENS7_iJ3o00KIqxzzg" target="_blank">(SHS)</a></div>
+            <div class="grade">FLEXIBLE INSTRUCTIONAL DELIVERY PLAN <a href="https://1drv.ms/f/c/62954c3ae818d381/Esp5ixKn0-JNrIVzBnySP_YB6go2hS8JRJg656MSEQrXLw" target="_blank">(FIDP)</a></div>
+<!--          <div class="grade"></div>-->
+           
+        </div>
+      </div>        
+        
+         <div id="modalLIS" style="display: none;">
+             <header>
+                     <div class="title">SCHOOL FORM 2025-2026</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">SCHOOL FORM<a href="https://1drv.ms/f/c/62954c3ae818d381/EsnyC2er6C5IkeE68LWoIBEBsVRh5YvGmKqx7yDGMliNgQ?e=fDEgOn" target="_blank">[SF1]</a></div>
+          <div class="grade">SCHOOL FORM<a href="https://1drv.ms/f/c/62954c3ae818d381/EhFgLxWQkFJAi6qx9GlRPsYB_N3pJS_LOlKYOdfGB4KNzQ?e=IoNqmZ" target="_blank">[SF2]</a></div>
+          <div class="grade">SCHOOL FORM<a href="https://1drv.ms/f/c/62954c3ae818d381/EtJwYyPNM5dNi3677WVCe_cBXlSc9yT9RPCXusVpbCphjQ?e=TGTiF1" target="_blank">[SF4]</a></div>
+          <div class="grade">SCHOOL FORM<a href="https://1drv.ms/f/c/62954c3ae818d381/EstwBjLBsttIkuPC8tRhZ5kB_wG6VCS7ByqzDY-7U4Ovnw?e=QyQCQh" target="_blank">[SF5]</a></div>
+          <div class="grade">SCHOOL FORM<a href="https://1drv.ms/f/c/62954c3ae818d381/EjdHQAXKladAsg5Dsom796MBmiyYlydu5W7sJ1JZqEgOrA?e=gjQ2Rf" target="_blank">[SF6]</a></div>
+          
+        </div>
+      </div> 
+        
+        
+        
+        
+        
+
+<!--    GRADE 7 LEVEL   -->
+<!--        HYDRUS-->
+         
+<div id="modalHYDRUS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">7-HYDRUS</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/ERd_bMGpGZtPn8F7_sB_Ap0BLMl7_c1FXtbnQWNmHH8BHw" target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EfNx1l3KiqVIkCJTkauMNxgB7QBoNxIdTS8E6NAGHwEF1w" target="_blank">ENGLISH 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/ER4wFheIcT5NsuO_h4JsrlABZGZzZWdoM6UONl2LslprMQ" target="_blank">FILIPINO 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/ERthOBIPFglFouLzeMS5FtEB3NgvxDiCOwvOy1KZa-ocbg" target="_blank">MAPEH 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EYqp803prdlEs2u-AQC8U4ABplaPKeMDuj7KjR2-gItsGg" target="_blank">MATHEMATICS 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EXQXF8bNduhDnCkz4VGC0k8BHECRaQYXSf859nUKy-f_OQ" target="_blank">SCIENCE 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/Ed-c_3JNCo9Gt9K0NCLQ6sAB42Nw7Qp4MLeGQxAR2QA7yA" target="_blank">TLE 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/ETeVcUSUW9JGozTRYKAsocgBrstJ-c7E8hVtzZDKqkhKGg" target="_blank">VALUES EDUCATION 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EUU0ccBV-ZJIoXN8AtujvL4BckVTYjdQwmvp3DbTezW_Fw" target="_blank">HGP 7</a></div>
+                               
+        </div>
+      </div>
+</div>     
+  
+<!--        PHOENIX-->
+         
+<div id="modalPHOENIX" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">7-PHOENIX</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EeuCicUeAQtKs9PApHNem4EBVxQ6LQx-lLhpH1ty5hbNtw" target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EUSyIfJYZJBOlRzZlUoIGd0BsKhJg9MZyrNFoRg14Hp64w" target="_blank">ENGLISH 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/ERSdV2Lh7S1Fi2NzI59iYk4BXwdL0zFbMrKiHapLEAyBLA" target="_blank">FILIPINO 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/ERqoD8zkc-5ChCF2AkEjNk0BMg1A0WK9HUMCoXu_t2eMpw" target="_blank">MAPEH 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EbQlZ1TmnotFqNjhzFh57PgBNs7sNAtvoFRFxupDICHkGA" target="_blank">MATHEMATICS 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EZlyXRt5d9pAqbHaRMYW48sBud6kT5lqD-CDGsGASar3mA" target="_blank">SCIENCE 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EVqDGRpkPVhAjsfoCJY4fd4BtErRnQSMy4lKNMOeZ4SMgA" target="_blank">TLE 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/ERyyKlK--glNoyG9r1vOopAB__rJkKKGS9FQPQb5GNu7BQ" target="_blank">VALUES EDUCATION 7</a></div>
+          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/EYggycyjCaFAjUEglxaFQRQBh9-krN1G6U-6fMk0MXO8vw" target="_blank">HGP 7</a></div>
+                               
+        </div>
+      </div>
+</div> 
+        
+ <!--        AQUILA-->
+         
+<div id="modalAQUILA" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">7-AQUILA</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EaedK05z1IdCr3gq54v7eSQBcwWlJ10fTHR4mI4WzQySoQ" target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EdLQ26QbMUhDlI1SmoPiTV8BtTI9E1RnmxNJFYBypvd2nw" target="_blank">ENGLISH 7</a></div>
+          <div class="grade">7-HYDRUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EZWIzdnzbn9IlzkWKlN8LPIBNd_gHZvSLZVYWl_ndJJ9lA" target="_blank">FILIPINO 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EYsn820vCHlJgf6BPLIQsQMBFPMf4vbQYfBC90Ca9B3NAw" target="_blank">MAPEH 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EWCimrPjbHBCtNME5CclRRkBZ645TCk1GozG86sRugJAMg" target="_blank">MATHEMATICS 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EWXSFlHHQH5FqbE1tNUou1oBqdp4qYx04C-wV4NzROh2Sg" target="_blank">SCIENCE 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EaHBbZKdcKJNpO1MmcW1tJEBHO8byBgwutldoCwaKclOVA" target="_blank">TLE 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EWHokAnQKOlEqLcWgLQWQhUBDMS3g1Cr4sVa5CvBETCptA" target="_blank">VALUES EDUCATION 7</a></div>
+          <div class="grade">7-AQUILA <a href="https://1drv.ms/x/c/62954c3ae818d381/EavYQXAfzWFBhDUDOuqp-2MBhRueK6NvwcUQlem96rXllA" target="_blank">HGP 7</a></div>
+                               
+        </div>
+      </div>
+</div> 
+        
+<!--        LYNX-->
+        
+ <div id="modalLYNX" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">7-LYNX</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EV-Bs_oXH0ZFolKtmXAz3QEBMDK-bKCNinvjzDKR2i3yxQ" target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/Ee2sjJwaVwhNrGO0t0JgSE0BlhiZ90fCiiQGpK9Q8bXDxA" target="_blank">ENGLISH 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EVgurCOHhbxMrKC8nAueqpoBhKwoL2PtMrFyrf3BH9bp1A" target="_blank">FILIPINO 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EX-AIJv_Yr5BrTM3iNlg4SsB0EHXNkxavEuhTSafA4MrBw" target="_blank">MAPEH 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EZ9gRD6NLxZBi5_Qqk-x3HwBIXdEj0r93ZdEka7Wy_vccQ" target="_blank">MATHEMATICS 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EfKIq3gF9uNNp26SL-sJwlgBJvDHa7pygyDoRJA-p9ZChQ" target="_blank">SCIENCE 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EekY5Kqd3KxLsURjukQ9LP0BC7DMOoP1TJG9qfhTd_Ayjw" target="_blank">TLE 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EZZe-52ggIZAsOIdUb8zsAwBum6SqxcASlKOE1zuJAniaQ" target="_blank">VALUES EDUCATION 7</a></div>
+          <div class="grade">7-LYNX <a href="https://1drv.ms/x/c/62954c3ae818d381/EQocEPVzmaBFkpO1E77VVsYBndy69fpPwQTVa20LzDbOZw" target="_blank">HGP 7</a></div>
+                               
+        </div>
+      </div>
+</div>       
+
+        
+        <!--    GRADE 8 LEVEL   -->
+        
+<div id="modalAMETHYST" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">8-AMETHYST</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 8 -->
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EZ1ThxD9GgxDrk-P0n6SGIIBrKlH3RSa30JzRCjNA9mCuA" target="_blank">ARALING PANLIPUNAN 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/Ecv9u70fA4pGmvMr6gWXuWABuG29aNmI08By9RetSf8f7A" target="_blank">ENGLISH 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EXVJH_5dC_9EtBaVlexcFoABjAMwFBH6L6JZqIesUeKPxw" target="_blank">FILIPINO 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/ESgnE8eCLT5EsZpwVFq9z6UBmKsioLrCO_ggYrMjsr5f2A " target="_blank">MAPEH 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EYdtweqV3bROpEqb0tv-KBUBb85x78FvMGapcOwburz1fQ " target="_blank">MATHEMATICS 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EUm5H3LasqVAm14l8VVv0BoB1TP2xyS4BJ3F5BIR_NnznA " target="_blank">SCIENCE 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EdQnJJ0Sq11Lm5DWfJZjmU8BBsi40UHGg20_sbc53vl0Gw " target="_blank">TLE 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/EflHKfeOxMRLlnMXkAKq4dgBu37r5XzOsmPIzBTqWZZbyA " target="_blank">VALUES EDUCATION 8</a></div>
+          <div class="grade">8-AMETHYST <a href="https://1drv.ms/x/c/62954c3ae818d381/ESv1u25VZhpBoYbKBHxQgYMBe00OTxrlJkuti_NxsCfDAA " target="_blank">HGP 8</a></div>
+                               
+        </div>
+      </div>
+</div>
+        
+
+<div id="modalSAPPHIRE" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">8-SAPPHIRE</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 8 -->
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EfaF-5I17xBIpY-5sLFHlLkBvPDQrs1UZ-OunZokdY81TA" target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EVPjiNeQbKZHnrMk8UNs9y4B_MD75zC4YeFPrNCeNcoLgw" target="_blank">ENGLISH 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EfIc6QQTnixHuvdTlCvBUOoBAX6zm4j_rJJTQdYLFt1gzQ" target="_blank">FILIPINO 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EbFu3Nb4c81CsVwBnS_8GM4BRDabN3GnmeAnGOIsxnhorQ " target="_blank">MAPEH 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EdwY27yuyv1BgvBmilLBDRIBHjcH8rp-CVM5jsKMLOdJXA " target="_blank">MATHEMATICS 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EVVzYQSUmsBMg_a8wWc5Il4BN3YZDJisAOr1CZDbkZGnww " target="_blank">SCIENCE 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/EeyA2XhM7mZPjwdhr-oQD4AB0KsOB9LvDS0Cfh1BoLqYEA " target="_blank">TLE 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/ERXUu7vrZPlDgF_k1IkAKhwBgJwR6gYcD6wIR11TOS4Avw " target="_blank">VALUES EDUCATION 8</a></div>
+          <div class="grade">8-SAPPHIRE <a href="https://1drv.ms/x/c/62954c3ae818d381/ERXUu7vrZPlDgF_k1IkAKhwBgJwR6gYcD6wIR11TOS4Avw " target="_blank">HGP 8</a></div>
+                               
+        </div>
+      </div>
+</div>
+        
+        
+<div id="modalGARNET" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">8-GARNET</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 8 -->
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/ETlnGDKH_W5KmhyYa4lIoiAB04MOGnxPTcTk-Cgdk7OkOw " target="_blank">ARALING PANLIPUNAN 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EaYcApSBQ85Loi56YZZoKqYBGXmqD-DqEXtqSW0j4iAwzQ " target="_blank">ENGLISH 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/Efe22Vn9oLNCjx0fU6_g_W4B0xRw-ZF9J50EGb8gHdXqjA " target="_blank">FILIPINO 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/ET72784ODktEoWUy39OIZp4BkzU1AbJskfRevmH4QmKSKA " target="_blank">MAPEH 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EWLkZomhotdAmzq6EJyl8zABgOj8-FwL90rr3CrTjiDc4Q " target="_blank">MATHEMATICS 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EV_bmZ_p1K1JvZ0cL8sfIz0BYaSzYwretUwpPkHUtgXKHQ " target="_blank">SCIENCE 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EaOiZ75dG_RLvSkYCzvhnHUBXCu7dJ7kMaRqm5qaPQ-SvQ " target="_blank">TLE 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EV9EwrRmeMlNqyjxN4Q5URoBSYKLUYnk0-GaxVYj1eyewg " target="_blank">VALUES EDUCATION 8</a></div>
+          <div class="grade">8-GARNET <a href="https://1drv.ms/x/c/62954c3ae818d381/EYnqSzrkOcZJh7TDsVyR1UwBbqlMHQYk8qF88e9M8336lg " target="_blank">HGP 8</a></div>
+                               
+        </div>
+      </div>
+</div>        
+        
+                
+   <!--    GRADE 9 LEVEL   -->      
+
+        
+  
+<div id="modalCALLISTO" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">9-CALLISTO</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/ESzRHUCm7ExOnGXJsId-Z5UBEyvqoGHy8xYgk6gEX0CypA " target="_blank">ARALING PANLIPUNAN 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/Ef-FgMwFH1RLlB8HoqQdYV4B05EGsQ5hRZ51hYqCOrlTtw " target="_blank">ENGLISH 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EWNeZ7jM8RVAlaeAOOGV5zMB77k9EwuHENSIGkRXaFaF6A " target="_blank">FILIPINO 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/ESt-lHP9YDxOia3_HGJOfmwBR5vTBAC0wl_vDeQR_e4GKA " target="_blank">MAPEH 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EbXnf6WuTcBMvJOrzp_ZKwkBVPTozNhuc8AUvaVUI7ah1Q " target="_blank">MATHEMATICS 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EVUoNdlU7wpIgRI_2o0SjRIBBtfl1dONIa7vW01M9BPHew " target="_blank">SCIENCE 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EWmhgzhyh81BgLwTX2blDUwBa9PS6NzNCPypNzv7-wy9iw " target="_blank">ESP 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/Efe1x58ujWlNj2IlbeTFfDQBCV1gj71yu4idpz4rfSaWZQ " target="_blank">HGP 9</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/Eb75yzj3qfBBhw_jPw6zMFMB4_pMwU7DmB1UVMVV99z4Jg " target="_blank">TLE 9-COOKERY</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EZVaZ6BzxeVLjlQdPibuxKYB1KGSvevTMd2VtuBszHVk_Q " target="_blank">TLE 9-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/ES_QcLYTZDFHjqp0AWMyyq0BDlklAtq-0L-Psl7a5eA1Vg " target="_blank">TLE 9-FRONT OFFICE</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/Ednq7eF6KwVJtm_XVcAewl4Bq-X1nDFqFgNk_U8MT-Pv0w " target="_blank">TLE 9-HOUSEKEEPING</a></div>
+          <div class="grade">9-CALLISTO <a href="https://1drv.ms/x/c/62954c3ae818d381/EdUKLE_Y3eJMtHiQT9chDesBH10rZalJurnwRjcpKhTUbw " target="_blank">TLE 9-TECHNICAL DRAFTING</a></div>    
+                               
+        </div>
+      </div>
+</div>       
+        
+        
+<div id="modalEUROPA" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">9-EUROPA</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EQVGzV_BmPNAvcbbnMU_o3gBvwwVWKFrrnuJdn-TdmXdhA " target="_blank">ARALING PANLIPUNAN 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EdPb94edEexDnqOGT-Y4fLAB5SloLeLNql81DP1QaxqQ-w " target="_blank">ENGLISH 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EbyhSJDiJIdDrD34acBVaz8BBcEvb3lbZAnvn17Dvh6W1Q " target="_blank">FILIPINO 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/ET5qheAHIvZLneZqEvaYzEABVUivKwpwlQZHaupYwNFtnA " target="_blank">MAPEH 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EflmUYT0YrlHl1rwgoZjpGIBXL-u7Pao4PwJlKfRPqPEOw " target="_blank">MATHEMATICS 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EXbKK_MkhupPo-g4sz3Wl4kB2N5Xs6NRc0BPD9rt2bEI7g " target="_blank">SCIENCE 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/ESAi3a1jqoxHiC8ANgup26wB2zAaB2IsNHx4hbWnCmtPHA " target="_blank">ESP 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EZOmr5q7L2hNmKT0ez7wTXIBuNsCHladLn57LXfdjZ96pw " target="_blank">HGP 9</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EXWycO7e1WJOraZvgsVK7T8BVmX82iVf6axwjZJVFfxGrw " target="_blank">TLE 9-COOKERY</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EVBL3LTPnLxDs3cyFThow0wBn8doX6k9m_Non3DvnBOLUw " target="_blank">TLE 9-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EWPW2Qw_dRhFmZ9xMMT4gQMBErOwOSjDVm_ufDHSPaHTJA " target="_blank">TLE 9-FRONT OFFICE</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EXIu4Rl3dINMnLMBRxtpEIABdUx4Tn88a8L0mG1j51MvtQ " target="_blank">TLE 9-HOUSEKEEPING</a></div>
+          <div class="grade">9-EUROPA <a href="https://1drv.ms/x/c/62954c3ae818d381/EeFi6TwMqqBAj9SDdrRBRD8BGJt5FssSfchvoHuhoz4TiA " target="_blank">TLE 9-TECHNICAL DRAFTING</a></div>   
+            
+        </div>
+      </div>
+</div> 
+        
+
+        
+<div id="modalGANYMEDE" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">9-GANYMEDE</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EdTyluVVH9lPqglbUT4GmrkBf2hzJHiT_ukulRZuJroT4Q " target="_blank">ARALING PANLIPUNAN 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EdIJR-BAjfZKqExAZWHcHBMBVGHp2VoRQoZDcDaBuvQTuA " target="_blank">ENGLISH 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EcVyUOeOC_BLkHGsNNxDK2wBuzg_c5EacnBkEQGez7fs4w " target="_blank">FILIPINO 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EVTakWHbaYtCj00USo0MkJcBHns8AusmuXED8u_WU9dGMw " target="_blank">MAPEH 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EUIU8LxgXF5JnWpM6NOTzN0BZIk1rGIkSI8pMHSJYXF2GQ " target="_blank">MATHEMATICS 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EXEOdtlnFr1CjRtZ03cxdzYBVOckjNo_iz671kjcI_li6g " target="_blank">SCIENCE 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EUFgtR4KwGhPgV2CP1rRyTsBii7L2HIn9Ia6rl-5kl4fAw " target="_blank">ESP 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EW7IYa6wdQ5IjT3DERe_FwUBxqJ4HOClcoZohyO-VzsDiQ " target="_blank">HGP 9</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EfvIkaXJIR1LtC2ntfY1uBkBA9IKJRLC2Q_ozVjG0uwPiQ " target="_blank">TLE 9-COOKERY</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/ES4sh9s-SlxDh9Nc2PG7eigB0aMHy4vfTkJ59nDVo9EO2w " target="_blank">TLE 9-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EXIkGyjt2XxFioRu68vQI1oBKkG6LRz1EZXjgtLsLryMAA " target="_blank">TLE 9-FRONT OFFICE</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/Ed8biR3pTINFrOasRl2C6iAB0v8vIns1YOOS_-lmWeZ9uQ " target="_blank">TLE 9-HOUSEKEEPING</a></div>
+          <div class="grade">9-GANYMEDE <a href="https://1drv.ms/x/c/62954c3ae818d381/EQJ0lvqgGP5Kmz4JzGpZgrQBKF0jjXUTXvOPAp61OQOqrA " target="_blank">TLE 9-TECHNICAL DRAFTING</a></div> 
+            
+        </div>
+      </div>
+</div>
+        
+  
+        <!--    GRADE 10 LEVEL   -->  
+        
+<div id="modalARTEMIS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">10-ARTEMIS</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EXEdp-CpcVxEvboNO4UFmlEBRobLi7yr1yB4h46T470Ifw">ARALING PANLIPUNAN 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EScIYBQArLpOtgN3JCVkUJwBKDaCH4CJVvokIBOUGcJxew" target="_blank">ENGLISH 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EcNOyJujpHtHgXnoRkfxx1YBTCnsGQ37ORHZV9Yt4qEglQ" target="_blank">FILIPINO 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EXAd2FZKGDRLhKVOC3FjvR4BSotH_BwmhBNCmM4uM77fow" target="_blank">MAPEH 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EcqciBNEkQFHl7Z6o8yN3KUBBh673R5qRgKZ3kgSVyiFQw" target="_blank">MATHEMATICS 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EdDXDv-3iTRDqOGTtxUXOZ8BZ8fNizLgkKupStQzWiJg8g" target="_blank">SCIENCE 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EVUUGm6di-RNirSrw2XHY7oBotiEbz23tVmNfWZmJrmFlw" target="_blank">ESP 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EfZgAOwgnRlIjoJ9sgQYTAcB3l8uAzTTyPmJnCv4SmIJhA" target="_blank">HGP 10</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/Eb8AIzjJ_Q1EtTmAS8GUkHcBcjHFPn8TQntfFd2oxauaLw" target="_blank">TLE 10-COOKERY</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/ETbhBKvxGq5AlxQnC3llEe0BSF5WPMDBhgeK3V2jhztplg" target="_blank">TLE 10-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EU4IqHvsKKhMii48qMZFNY0BeZCf-H6M6I67D3-LGLvEpg" target="_blank">TLE 10-FRONT OFFICE</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/ESRsvEQX8NxEp3_B6VthEjMBlULuMEnczTpYruHe-6DUhw" target="_blank">TLE 10-HOUSEKEEPING</a></div>
+          <div class="grade">10-ARTEMIS <a href="https://1drv.ms/x/c/62954c3ae818d381/EW5xTfaxKpxDqWriZEAONFoB7AfaRg7IySEpmaCbGjKbow" target="_blank">TLE 10-TECHNICAL DRAFTING</a></div> 
+            
+        </div>
+      </div>
+</div>        
+        
+<div id="modalACHELOUS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">10-ACHELOUS</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/Ec2y-n2bYs5Gqrl2ihvcTvsBFdeFXLTk317jCcrUgYlvYw">ARALING PANLIPUNAN 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EX8047Mbq5ZDhPwCFtyrsUwBJ2lx-ugIMG75ecH3B4QZXw" target="_blank">ENGLISH 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/Ebbh62YklGdLjQp61GxDC20BXJrD8exIx9m9v-A-m7OdYQ" target="_blank">FILIPINO 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EWLn2upy-r9Bm2dG6zCYIhkBuygnkW-NDAC4VqsMAhgsAQ" target="_blank">MAPEH 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EfnZZFmztq9Etd2BGaH3LGQBYf-kCN9MmgLaHIiJYZ64Vg" target="_blank">MATHEMATICS 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/ESvwgYYc9I9Kvdl1yR1tU7UBNBswWAFakohlP1u2RahoLw" target="_blank">SCIENCE 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EfkWQeoGABFDn0RU_a_qOq8B2kSTyvmDYfKKYGcRt7fwcQ" target="_blank">ESP 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EX4Gkpsi4ChPraLFJx-ML5cBvGfISd_OqO-bHLwOvcXJoQ" target="_blank">HGP 10</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EdmYu99U7hJApk7GzFD0YO8BpC9vOadcc7B8CVu67-jf3g" target="_blank">TLE 10-COOKERY</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EedjLTxEFddChiUlydm6qpIBbj4uJNgaGnOCf2z0m2En8w" target="_blank">TLE 10-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EVZ_dPjsKYdGqrqCXXoXBGMBoz2CL82A3F0uYHl4SznA_g" target="_blank">TLE 10-FRONT OFFICE</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EVBrHMleC_ZBrI8if5lY9hgBouYaTtBcmO9mEf9T6dOPhg" target="_blank">TLE 10-HOUSEKEEPING</a></div>
+          <div class="grade">10-ACHELOUS <a href="https://1drv.ms/x/c/62954c3ae818d381/EaiM0gTumuRBjjclkzKKYEQBCc7yT5YJfZpmfd3kPDbIww" target="_blank">TLE 10-TECHNICAL DRAFTING</a></div> 
+            
+        </div>
+      </div>
+</div>        
+        
+
+<div id="modalARES" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">10-ARES</div>
+        </header>
+        <div class="grid">
+          <!-- Grade 9 -->
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EZMDg0qb3tpApRPSDw59jvwBKBpYqHUN_kZ-u4Ck2A7i0Q">ARALING PANLIPUNAN 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/ERh2QQaTonhJh5niThfuieQBTSOLuDmZ1KvM61J1v8_nDQ" target="_blank">ENGLISH 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EbzYiWUmUnZGvw0YT6Jjm4IBPO9mQJTnn5GT9cE63BCewA" target="_blank">FILIPINO 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EeA9NHBrs51NkUl74G1rk9ABEnZ2bnK_BdhsMafWEkQGuw" target="_blank">MAPEH 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/Efk5L9om-S9PqwqpACEtbmUBgFt1_Bzf6oE-h6yXBf28Sg" target="_blank">MATHEMATICS 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EQqmTTwPWaNDiTXhL9eCLlMBAsQnx_T4loIUbcXmy_6RXQ" target="_blank">SCIENCE 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EY5dvTTRTxRHt1L3xtUAlnsB4C5YtEkYIJS0i4NWO7VXXQ" target="_blank">ESP 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EaN4YHOdrnFHp2y7LHucUoUBFOc7-OdtheTXR36Cb6LFew" target="_blank">HGP 10</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EZGmg6gCdrtMvJXQgyW4cR0BDVpzRHn-1XMrTsUwa9g_Iw" target="_blank">TLE 10-COOKERY</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EeMw1gmP2w9Ap-NURM_JGq8BroiW9oMkx0aX5ns79WMD9w" target="_blank">TLE 10-COMPUTER SYSTEM SERVICING</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EYjbgmx6rqVOuLFhC2NHDvUBji-gc8mLFOqr729XvXMkjA" target="_blank">TLE 10-FRONT OFFICE</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EctlMBDOx7pGqw4zI_Nedk8Brls4I4R1CZSmQW7KQ9GNyw" target="_blank">TLE 10-HOUSEKEEPING</a></div>
+          <div class="grade">10-ARES <a href="https://1drv.ms/x/c/62954c3ae818d381/EXsY0nfuSZRLp9Ee-kqB2S8BZWDjskeANO9M2k6rE2IxvQ" target="_blank">TLE 10-TECHNICAL DRAFTING</a></div> 
+            
+        </div>
+      </div>
+</div>
+        
+  <!-- GRADE 11-->
+        
+<div id="modalJOBS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">11-JOBS</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">11-JOBS <a href="#">21ST CENTURY LITERATURE</a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">BUSINESS MATHEMATICS</a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">EARTH AND LIFE SCIENCE </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">GENERAL MATHEMATICS </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">INTRODUCTION TO PHILOSOPHY </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">KOMUNIKASYO AT PANANALIKSIK </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">ORAL COMMUNICATION </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">ORGANIZATION AND MANAGEMENT </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">PHYSICAL EDUCATION 1 </a></div>
+          <div class="grade">11-JOBS <a href="#" target="_blank">HGP 11 </a></div>
+                      
+        </div>
+      </div>
+</div>   
+        
+        
+<div id="modalFRANKLIN" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">11-FRANKLIN</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">21ST CENTURY LITERATURE</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">DISCIPLINE AND IDEAS IN SOCIAL SCI.</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">EARTH AND LIFE SCIENCE</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">INTRODUCTION TO PHILOSOPHY</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">KOMUNIKASYO AT PANANALIKSIK</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">ORAL COMMUNICATION</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">ORGANIZATION AND MANAGEMENT</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">PHYSICAL EDUCATION 1</a></div>
+          <div class="grade">11-FRANKLIN <a href="#" target="_blank">HGP 11</a></div>
+                      
+        </div>
+      </div>
+</div>         
+
+        
+<div id="modalRIZAL" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">11-RIZAL</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">11-RIZAL <a href="#" target="_blank">21ST CENTURY LITERATURE</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">DISCIPLINE AND IDEAS IN SOCIAL SCI.</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">EARTH AND LIFE SCIENCE</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">INTRODUCTION TO PHILOSOPHY</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">KOMUNIKASYO AT PANANALIKSIK</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">ORAL COMMUNICATION</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">PHYSICAL EDUCATION 1</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">PHILIPPINE POLITICS & GOVERNANCE</a></div>
+          <div class="grade">11-RIZAL <a href="#" target="_blank">HGP 11</a></div>
+                    
+        </div>
+      </div>
+</div>
+        
+        
+        
+<div id="modalEINSTEIN" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">11-EINSTEIN</div>
+                <button onclick="history.back()">Go Back</button>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">21ST CENTURY LITERATURE</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">EARTH SCIENCE</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">GENERAL CHEMISTRY 1</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">INTRODUCTION TO PHILOSOPHY</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">KOMUNIKASYO AT PANANALIKSIK</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">ORAL COMMUNICATION</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">PHYSICAL EDUCATION 1</a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">PRE-CALCULUS </a></div>
+          <div class="grade">11-EINSTEIN <a href="#" target="_blank">HGP 11</a></div>
+               
+        </div>
+      </div>
+</div>        
+        
+         <!-- GRADE 12-->       
+        
+<div id="modalEQUINOX" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">GAS 12-EQUINOX</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">APPLIED ECONOMICS</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">CONTEMPORARY PHIL. ARTS</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">MEDIA AND INFORMATION LITERACY</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">PHYSICAL EDUCATION 3</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">PERSONAL DEVELOPMENT</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">PAGSULAT SA FILIPINO/a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">PHILIPPINE POLITICS & GOVERNANCE</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">PRACTICAL RESEARCH 2</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">TRENDS, NETWORKS & CRIT. THINKING</a></div>
+          <div class="grade">12-EQUINOX <a href="#" target="_blank">HGP 12</a></div>
+               
+        </div>
+      </div>
+</div>
+        
+<div id="modalMERAKI" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">AMB 12-MERAKI</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+          <div class="grade">12-MERAKI <a href="#" target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>
+
+<div id="modalVERITAS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">HUMMS 12-VERITAS</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-VERITAS <a href="#" target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>
+        
+<div id="modalSTELLARIS" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">STEM 12-STELLARIS</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+          <div class="grade">12-STELLARIS <a href="#" target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>
+        
+<div id="modalNEXA" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">ICT 12-NEXA</div>
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-NEXA <a href="#" target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>
+        
+<div id="modalSOLANA" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+            <header>
+                     <div class="title">HE 11-SOLANA</div>
+                <button onclick="history.back()">Go Back</button>   
+        </header>
+        <div class="grid">
+          
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+          <div class="grade">12-SOLANA <a href="#" target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+  </div>
+    </div>
+        
+ 
+ <script src="hermes.js"></script>
+    
+</body>
+</html>
