@@ -137,8 +137,8 @@ body {
 
     /* Styles for teacher's files */
     .name-box {
-      background-color: #d4a500;
-      color: #4a1c00;
+      background-color:maroon;
+      color:white;
       padding: 10px;
       border-radius: 8px;
       text-align: center;
@@ -199,4 +199,5 @@ body {
     .tab-content.active {
       display: flex;
       gap: 20px;
+
     }
