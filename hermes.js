@@ -10,7 +10,7 @@
       document.getElementById('modalText').innerText = content;
       document.getElementById('modalGrades').style.display = "none"; // Hide grades by default
       document.getElementById('modalOmsLink').style.display = "none"; // Hide OMS link by default
-      document.getElementById('modalTeachersFile').style.display = "none"; // Hide Teachers File by default
+      document.getElementById('modalRVF').style.display = "none"; // Hide Teachers File by default
       document.getElementById('modalRawScore').style.display = "none"; // Hide Raw Score File by default
       document.getElementById('modalDocuments').style.display = "none"; // Hide Raw Score File by default
       document.getElementById('modalLIS').style.display = "none"; // Hide Raw Score File by default
@@ -187,5 +187,6 @@
       event.currentTarget.classList.add('active');
 
     }
+
 
 
