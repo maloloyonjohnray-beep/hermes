@@ -22,8 +22,8 @@
       else if (content === 'ONLINE MONITORING SYSTEM (OMS)') {
         document.getElementById('modalOmsLink').style.display = "block"; // Show OMS link
       }
-      else if (content === 'TEACHER’S FILE') {
-        document.getElementById('modalTeachersFile').style.display = "block"; // Show Teacher's Files
+      else if (content === 'Record Video Folder') {
+        document.getElementById('modalRVF').style.display = "block"; // Show Teacher's Files
       }
       else if (content === 'Raw Scores') {
         document.getElementById('modalRawScore').style.display = "block"; // Show ROW SCORE Files
@@ -187,6 +187,7 @@
       event.currentTarget.classList.add('active');
 
     }
+
 
 
 
