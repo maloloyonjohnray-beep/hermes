@@ -15,6 +15,7 @@
       document.getElementById('modalDocuments').style.display = "none"; // Hide Raw Score File by default
       document.getElementById('modalLIS').style.display = "none"; // Hide Raw Score File by default
       document.getElementById('modalECR').style.display = "none"; // Hide Raw Score File by default
+      document.getElementById('modalECR2').style.display = "none"; // Hide Raw Score File by default
 //      document.getElementById('modalHYDRUS').style.display = "none";    
       if (content === 'CONSOLIDATED GRADES') {
         document.getElementById('modalGrades').style.display = "block"; // Show grades for consolidated
@@ -30,6 +31,9 @@
       }
       else if (content === 'ECR') {
         document.getElementById('modalECR').style.display = "block"; // Show ROW SCORE Files
+      }
+      else if (content === 'ECR2') {
+        document.getElementById('modalECR2').style.display = "block"; // Show ROW SCORE Files
       }
       else if (content === 'DOCUMENTS') {
         document.getElementById('modalDocuments').style.display = "block"; // Show DOCUMENTS Files
@@ -128,7 +132,45 @@
     else if (content === 'SOLANA') {
         document.getElementById('modalSOLANA').style.display = "block"; // Show ROW SCORE Files
       }     
+    else if (content === 'JOBS2') {
+        document.getElementById('modalJOBS2').style.display = "block"; // Show ROW SCORE Files
+      }     
+    
+    else if (content === 'FRANKLIN2') {
+        document.getElementById('modalFRANKLIN2').style.display = "block"; // Show ROW SCORE Files
+      }
         
+    else if (content === 'RIZAL2') {
+        document.getElementById('modalRIZAL2').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'EINSTEIN2') {
+        document.getElementById('modalEINSTEIN2').style.display = "block"; // Show ROW SCORE Files
+      }    
+        
+     else if (content === 'EQUINOX2') {
+        document.getElementById('modalEQUINOX2').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'MERAKI2') {
+        document.getElementById('modalMERAKI2').style.display = "block"; // Show ROW SCORE Files
+      }   
+        
+    else if (content === 'VERITAS2') {
+        document.getElementById('modalVERITAS2').style.display = "block"; // Show ROW SCORE Files
+      }     
+    
+    else if (content === 'STELLARIS2') {
+        document.getElementById('modalSTELLARIS2').style.display = "block"; // Show ROW SCORE Files
+      }
+        
+    else if (content === 'NEXA2') {
+        document.getElementById('modalNEXA2').style.display = "block"; // Show ROW SCORE Files
+      } 
+        
+    else if (content === 'SOLANA2') {
+        document.getElementById('modalSOLANA2').style.display = "block"; // Show ROW SCORE Files
+      }     
         
         
 
