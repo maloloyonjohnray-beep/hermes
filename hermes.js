@@ -204,6 +204,16 @@
       document.getElementById('modalSTELLARIS').style.display = "none";
       document.getElementById('modalNEXA').style.display = "none";
       document.getElementById('modalSOLANA').style.display = "none";   
+      document.getElementById('modalJOBS2').style.display = "none"; 
+      document.getElementById('modalFRANKLIN2').style.display = "none";
+      document.getElementById('modalRIZAL2').style.display = "none";
+      document.getElementById('modalEINSTEIN2').style.display = "none";   
+      document.getElementById('modalMERAKI2').style.display = "none";
+      document.getElementById('modalEQUINOX2').style.display = "none"; 
+      document.getElementById('modalVERITAS2').style.display = "none"; 
+      document.getElementById('modalSTELLARIS2').style.display = "none";
+      document.getElementById('modalNEXA2').style.display = "none";
+      document.getElementById('modalSOLANA2').style.display = "none";
     }
 
     // Close the modal when clicking outside of it
@@ -229,6 +239,7 @@
       event.currentTarget.classList.add('active');
 
     }
+
 
 
 
