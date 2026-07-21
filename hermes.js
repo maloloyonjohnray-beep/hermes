@@ -69,6 +69,10 @@
     else if (content === 'GARNET') {
         document.getElementById('modalGARNET').style.display = "block"; // Show ROW SCORE Files
       }
+
+    else if (content === 'EMERALD') {
+        document.getElementById('modalEMERALD').style.display = "block"; // Show ROW SCORE Files
+      }
         
     else if (content === 'CALLISTO') {
         document.getElementById('modalCALLISTO').style.display = "block"; // Show ROW SCORE Files
@@ -188,6 +192,7 @@
       document.getElementById('modalAMETHYST').style.display = "none";
       document.getElementById('modalSAPPHIRE').style.display = "none";
       document.getElementById('modalGARNET').style.display = "none";
+      document.getElementById('modalEMERALD').style.display = "none";
       document.getElementById('modalCALLISTO').style.display = "none";
       document.getElementById('modalGANYMEDE').style.display = "none";
       document.getElementById('modalEUROPA').style.display = "none"; 
