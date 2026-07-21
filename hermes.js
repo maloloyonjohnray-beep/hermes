@@ -135,7 +135,12 @@
         
     else if (content === 'SOLANA') {
         document.getElementById('modalSOLANA').style.display = "block"; // Show ROW SCORE Files
-      }     
+      } 
+
+    else if (content === 'TECSON') {
+        document.getElementById('modalTECSON').style.display = "block"; // Show ROW SCORE Files
+      }
+        
     else if (content === 'JOBS2') {
         document.getElementById('modalJOBS2').style.display = "block"; // Show ROW SCORE Files
       }     
@@ -208,7 +213,8 @@
       document.getElementById('modalVERITAS').style.display = "none"; 
       document.getElementById('modalSTELLARIS').style.display = "none";
       document.getElementById('modalNEXA').style.display = "none";
-      document.getElementById('modalSOLANA').style.display = "none";   
+      document.getElementById('modalSOLANA').style.display = "none"; 
+      document.getElementById('modalTECSON').style.display = "none";
       document.getElementById('modalJOBS2').style.display = "none"; 
       document.getElementById('modalFRANKLIN2').style.display = "none";
       document.getElementById('modalRIZAL2').style.display = "none";
