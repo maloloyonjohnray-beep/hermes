@@ -1,259 +1,166 @@
-// Function to update the link
-    function updateLink(newUrl) {
-        document.getElementById('omsLink').href = newUrl;
-        document.getElementById('calendatlink').href = newUrl;
-    }  
-      
-      
-   //MODAL FUNCTION  
-    function openModal(content) {
-      document.getElementById('modalText').innerText = content;
-      document.getElementById('modalGrades').style.display = "none"; // Hide grades by default
-      document.getElementById('modalOmsLink').style.display = "none"; // Hide OMS link by default
-      document.getElementById('modalRVF').style.display = "none"; // Hide Teachers File by default
-      document.getElementById('modalRawScore').style.display = "none"; // Hide Raw Score File by default
-      document.getElementById('modalDocuments').style.display = "none"; // Hide Raw Score File by default
-      document.getElementById('modalLIS').style.display = "none"; // Hide Raw Score File by default
-      document.getElementById('modalECR').style.display = "none"; // Hide Raw Score File by default
-      document.getElementById('modalECR2').style.display = "none"; // Hide Raw Score File by default
-//      document.getElementById('modalHYDRUS').style.display = "none";    
-      if (content === 'CONSOLIDATED GRADES') {
-        document.getElementById('modalGrades').style.display = "block"; // Show grades for consolidated
-      }
-      else if (content === 'ONLINE MONITORING SYSTEM (OMS)') {
-        document.getElementById('modalOmsLink').style.display = "block"; // Show OMS link
-      }
-      else if (content === 'Record Video Folder') {
-        document.getElementById('modalRVF').style.display = "block"; // Show Teacher's Files
-      }
-      else if (content === 'Raw Scores') {
-        document.getElementById('modalRawScore').style.display = "block"; // Show ROW SCORE Files
-      }
-      else if (content === 'ECR') {
-        document.getElementById('modalECR').style.display = "block"; // Show ROW SCORE Files
-      }
-      else if (content === 'ECR2') {
-        document.getElementById('modalECR2').style.display = "block"; // Show ROW SCORE Files
-      }
-      else if (content === 'DOCUMENTS') {
-        document.getElementById('modalDocuments').style.display = "block"; // Show DOCUMENTS Files
-      }
-      else if (content === 'LIS COORDINATOR') {
-        document.getElementById('modalLIS').style.display = "block"; // Show LIS Files
-      }
-        
-        
-     else if (content === 'HYDRUS') {
-        document.getElementById('modalHYDRUS').style.display = "block"; // Show ROW SCORE Files
-      } 
-     else if (content === 'PHOENIX') {
-        document.getElementById('modalPHOENIX').style.display = "block"; // Show ROW SCORE Files
-      }   
-        
-    else if (content === 'AQUILA') {
-        document.getElementById('modalAQUILA').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'LYNX') {
-        document.getElementById('modalLYNX').style.display = "block"; // Show ROW SCORE Files
-      }    
-        
-   else if (content === 'AMETHYST') {
-        document.getElementById('modalAMETHYST').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'SAPPHIRE') {
-        document.getElementById('modalSAPPHIRE').style.display = "block"; // Show ROW SCORE Files
-      }
-    
-    else if (content === 'GARNET') {
-        document.getElementById('modalGARNET').style.display = "block"; // Show ROW SCORE Files
-      }
-
-    else if (content === 'EMERALD') {
-        document.getElementById('modalEMERALD').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'CALLISTO') {
-        document.getElementById('modalCALLISTO').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'GANYMEDE') {
-        document.getElementById('modalGANYMEDE').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'EUROPA') {
-        document.getElementById('modalEUROPA').style.display = "block"; // Show ROW SCORE Files
-      }     
-    
-    else if (content === 'ACHELOUS') {
-        document.getElementById('modalACHELOUS').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'ARTEMIS') {
-        document.getElementById('modalARTEMIS').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'ARES') {
-        document.getElementById('modalARES').style.display = "block"; // Show ROW SCORE Files
-      }   
-    else if (content === 'JOBS') {
-        document.getElementById('modalJOBS').style.display = "block"; // Show ROW SCORE Files
-      }     
-    
-    else if (content === 'FRANKLIN') {
-        document.getElementById('modalFRANKLIN').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'RIZAL') {
-        document.getElementById('modalRIZAL').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'EINSTEIN') {
-        document.getElementById('modalEINSTEIN').style.display = "block"; // Show ROW SCORE Files
-      }    
-        
-     else if (content === 'EQUINOX') {
-        document.getElementById('modalEQUINOX').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'MERAKI') {
-        document.getElementById('modalMERAKI').style.display = "block"; // Show ROW SCORE Files
-      }   
-        
-    else if (content === 'VERITAS') {
-        document.getElementById('modalVERITAS').style.display = "block"; // Show ROW SCORE Files
-      }     
-    
-    else if (content === 'STELLARIS') {
-        document.getElementById('modalSTELLARIS').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'NEXA') {
-        document.getElementById('modalNEXA').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'SOLANA') {
-        document.getElementById('modalSOLANA').style.display = "block"; // Show ROW SCORE Files
-      } 
-
-    else if (content === 'TECSON') {
-        document.getElementById('modalTECSON').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'JOBS2') {
-        document.getElementById('modalJOBS2').style.display = "block"; // Show ROW SCORE Files
-      }     
-    
-    else if (content === 'FRANKLIN2') {
-        document.getElementById('modalFRANKLIN2').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'RIZAL2') {
-        document.getElementById('modalRIZAL2').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'EINSTEIN2') {
-        document.getElementById('modalEINSTEIN2').style.display = "block"; // Show ROW SCORE Files
-      }    
-        
-     else if (content === 'EQUINOX2') {
-        document.getElementById('modalEQUINOX2').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'MERAKI2') {
-        document.getElementById('modalMERAKI2').style.display = "block"; // Show ROW SCORE Files
-      }   
-        
-    else if (content === 'VERITAS2') {
-        document.getElementById('modalVERITAS2').style.display = "block"; // Show ROW SCORE Files
-      }     
-    
-    else if (content === 'STELLARIS2') {
-        document.getElementById('modalSTELLARIS2').style.display = "block"; // Show ROW SCORE Files
-      }
-        
-    else if (content === 'NEXA2') {
-        document.getElementById('modalNEXA2').style.display = "block"; // Show ROW SCORE Files
-      } 
-        
-    else if (content === 'SOLANA2') {
-        document.getElementById('modalSOLANA2').style.display = "block"; // Show ROW SCORE Files
-      }     
-        
-        
-
-      document.getElementById('myModal').style.display = "block";
-    }
-      
-    
-
-    function closeModal() {
-      document.getElementById('myModal').style.display = "none";
-      document.getElementById('modalHYDRUS').style.display = "none";
-      document.getElementById('modalPHOENIX').style.display = "none";
-      document.getElementById('modalAQUILA').style.display = "none";
-      document.getElementById('modalLYNX').style.display = "none";
-      document.getElementById('modalAMETHYST').style.display = "none";
-      document.getElementById('modalSAPPHIRE').style.display = "none";
-      document.getElementById('modalGARNET').style.display = "none";
-      document.getElementById('modalEMERALD').style.display = "none";
-      document.getElementById('modalCALLISTO').style.display = "none";
-      document.getElementById('modalGANYMEDE').style.display = "none";
-      document.getElementById('modalEUROPA').style.display = "none"; 
-      document.getElementById('modalACHELOUS').style.display = "none";
-      document.getElementById('modalARTEMIS').style.display = "none";
-      document.getElementById('modalARES').style.display = "none"; 
-      document.getElementById('modalJOBS').style.display = "none"; 
-      document.getElementById('modalFRANKLIN').style.display = "none";
-      document.getElementById('modalRIZAL').style.display = "none";
-      document.getElementById('modalEINSTEIN').style.display = "none";   
-      document.getElementById('modalMERAKI').style.display = "none";
-      document.getElementById('modalEQUINOX').style.display = "none"; 
-      document.getElementById('modalVERITAS').style.display = "none"; 
-      document.getElementById('modalSTELLARIS').style.display = "none";
-      document.getElementById('modalNEXA').style.display = "none";
-      document.getElementById('modalSOLANA').style.display = "none"; 
-      document.getElementById('modalTECSON').style.display = "none";
-      document.getElementById('modalJOBS2').style.display = "none"; 
-      document.getElementById('modalFRANKLIN2').style.display = "none";
-      document.getElementById('modalRIZAL2').style.display = "none";
-      document.getElementById('modalEINSTEIN2').style.display = "none";   
-      document.getElementById('modalMERAKI2').style.display = "none";
-      document.getElementById('modalEQUINOX2').style.display = "none"; 
-      document.getElementById('modalVERITAS2').style.display = "none"; 
-      document.getElementById('modalSTELLARIS2').style.display = "none";
-      document.getElementById('modalNEXA2').style.display = "none";
-      document.getElementById('modalSOLANA2').style.display = "none";
-    }
-
-    // Close the modal when clicking outside of it
-    window.onclick = function(event) {
-      if (event.target == document.getElementById('myModal')) {
-        closeModal();
-      }
-    }
-
-    function openTab(tabId) {
-      // Hide all tab contents
-      document.querySelectorAll('.tab-content').forEach(tab => {
-        tab.classList.remove('active');
-      });
-      
-      // Remove active class from all buttons
-      document.querySelectorAll('.tab-button').forEach(button => {
-        button.classList.remove('active');
-      });
-      
-      // Show selected tab and make button active
-      document.getElementById(tabId).classList.add('active');
-      event.currentTarget.classList.add('active');
-
-    }
-
-
-
-
-
-
-
+// =========================
+// HERMES - MAIN JAVASCRIPT
+// =========================
+// Function to update links
+function updateLink(newUrl) {
+const omsLink = document.getElementById('omsLink');
+const calendarLink = document.getElementById('calendarlink');
+if (omsLink) omsLink.href = newUrl;
+if (calendarLink) calendarLink.href = newUrl;
+}
+// -------------------------------------------------
+// MODAL MANAGEMENT
+// -------------------------------------------------
+const mainModalId = 'myModal';
+const modalIds = [
+'modalHYDRUS','modalPHOENIX','modalAQUILA','modalLYNX',
+'modalAMETHYST','modalSAPPHIRE','modalGARNET','modalEMERALD',
+'modalCALLISTO','modalGANYMEDE','modalEUROPA','modalACHELOUS',
+'modalARTEMIS','modalARES','modalJOBS','modalFRANKLIN',
+'modalRIZAL','modalEINSTEIN','modalEQUINOX','modalMERAKI',
+'modalVERITAS','modalSTELLARIS','modalNEXA','modalSOLANA',
+'modalTECSON','modalJOBS2','modalFRANKLIN2','modalRIZAL2',
+'modalEINSTEIN2','modalEQUINOX2','modalMERAKI2','modalVERITAS2',
+'modalSTELLARIS2','modalNEXA2','modalSOLANA2'
+];
+const mainModalPanels = [
+'modalGrades',
+'modalOmsLink',
+'modalRVF',
+'modalRawScore',
+'modalDocuments',
+'modalLIS',
+'modalECR',
+'modalECR2'
+];
+// Parent relationships for the E-Class Record sub-modals.
+const parentModal = {
+HYDRUS:'ECR', PHOENIX:'ECR', AQUILA:'ECR', LYNX:'ECR',
+AMETHYST:'ECR', SAPPHIRE:'ECR', GARNET:'ECR', EMERALD:'ECR',
+CALLISTO:'ECR', GANYMEDE:'ECR', EUROPA:'ECR', ACHELOUS:'ECR',
+ARTEMIS:'ECR', ARES:'ECR', JOBS:'ECR', FRANKLIN:'ECR',
+RIZAL:'ECR', EINSTEIN:'ECR', EQUINOX:'ECR', MERAKI:'ECR',
+VERITAS:'ECR', STELLARIS:'ECR', NEXA:'ECR', SOLANA:'ECR',
+TECSON:'ECR2', JOBS2:'ECR2', FRANKLIN2:'ECR2', RIZAL2:'ECR2',
+EINSTEIN2:'ECR2', EQUINOX2:'ECR2', MERAKI2:'ECR2',
+VERITAS2:'ECR2', STELLARIS2:'ECR2', NEXA2:'ECR2', SOLANA2:'ECR2'
+};
+const modalPanelMap = {
+'CONSOLIDATED GRADES':'modalGrades',
+'ONLINE MONITORING SYSTEM (OMS)':'modalOmsLink',
+'Record Video Folder':'modalRVF',
+'Raw Scores':'modalRawScore',
+'DOCUMENTS':'modalDocuments',
+'LIS COORDINATOR':'modalLIS',
+'ECR':'modalECR',
+'ECR2':'modalECR2',
+HYDRUS:'modalHYDRUS', PHOENIX:'modalPHOENIX', AQUILA:'modalAQUILA',
+LYNX:'modalLYNX', AMETHYST:'modalAMETHYST', SAPPHIRE:'modalSAPPHIRE',
+GARNET:'modalGARNET', EMERALD:'modalEMERALD', CALLISTO:'modalCALLISTO',
+GANYMEDE:'modalGANYMEDE', EUROPA:'modalEUROPA', ACHELOUS:'modalACHELOUS',
+ARTEMIS:'modalARTEMIS', ARES:'modalARES', JOBS:'modalJOBS',
+FRANKLIN:'modalFRANKLIN', RIZAL:'modalRIZAL', EINSTEIN:'modalEINSTEIN',
+EQUINOX:'modalEQUINOX', MERAKI:'modalMERAKI', VERITAS:'modalVERITAS',
+STELLARIS:'modalSTELLARIS', NEXA:'modalNEXA', SOLANA:'modalSOLANA',
+TECSON:'modalTECSON', JOBS2:'modalJOBS2', FRANKLIN2:'modalFRANKLIN2',
+RIZAL2:'modalRIZAL2', EINSTEIN2:'modalEINSTEIN2',
+EQUINOX2:'modalEQUINOX2', MERAKI2:'modalMERAKI2',
+VERITAS2:'modalVERITAS2', STELLARIS2:'modalSTELLARIS2',
+NEXA2:'modalNEXA2', SOLANA2:'modalSOLANA2'
+};
+let currentModal = null;
+let modalHistory = [];
+function hideElement(id) {
+const el = document.getElementById(id);
+if (el) el.style.display = 'none';
+}
+function showElement(id, display = 'block') {
+const el = document.getElementById(id);
+if (el) el.style.display = display;
+}
+function hideAllModalPanels() {
+mainModalPanels.forEach(hideElement);
+modalIds.forEach(hideElement);
+}
+function openModal(content) {
+// Save the currently displayed modal so the Back button can return to it.
+if (currentModal && currentModal !== content) {
+modalHistory.push(currentModal);
+}
+currentModal = content;
+hideAllModalPanels();
+showElement(mainModalId);
+const panelId = modalPanelMap[content];
+if (panelId) {
+showElement(panelId);
+} else {
+const modalText = document.getElementById('modalText');
+if (modalText) modalText.innerText = content;
+}
+}
+function goBack() {
+if (modalHistory.length > 0) {
+const previousModal = modalHistory.pop();
+// Prevent openModal() from adding the current modal again.
+const oldCurrent = currentModal;
+currentModal = null;
+openModal(previousModal);
+// Remove the duplicate history entry created by openModal().
+if (modalHistory.length > 0 &&
+modalHistory[modalHistory.length - 1] === oldCurrent) {
+modalHistory.pop();
+}
+return;
+}
+closeModal();
+}
+function closeModal() {
+hideAllModalPanels();
+hideElement(mainModalId);
+modalHistory = [];
+currentModal = null;
+}
+// Close the main modal when clicking outside its content.
+window.addEventListener('click', function (event) {
+const mainModal = document.getElementById(mainModalId);
+if (mainModal && event.target === mainModal) {
+closeModal();
+}
+});
+// Escape closes the complete modal.
+window.addEventListener('keydown', function (event) {
+if (event.key === 'Escape') {
+closeModal();
+}
+});
+// -------------------------------------------------
+// TAB MANAGEMENT
+// -------------------------------------------------
+function openTab(tabId, buttonElement) {
+document.querySelectorAll('.tab-content').forEach(tab => {
+tab.classList.remove('active');
+});
+document.querySelectorAll('.tab-button').forEach(button => {
+button.classList.remove('active');
+});
+const selectedTab = document.getElementById(tabId);
+if (selectedTab) {
+selectedTab.classList.add('active');
+}
+if (buttonElement) {
+buttonElement.classList.add('active');
+}
+}
+// Keep the existing HTML onclick="openTab('...')" working,
+// without relying on the browser's global `event` variable.
+document.addEventListener('DOMContentLoaded', function () {
+document.querySelectorAll('.tab-button').forEach(button => {
+button.addEventListener('click', function () {
+const onclickText = this.getAttribute('onclick') || '';
+const match = onclickText.match(/openTab\(['"]([^'"]+)['"]\)/);
+if (match) {
+openTab(match[1], this);
+}
+});
+});
+});
