@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>School System Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hermes.css">
+
+<style>
+  .modal-content { position: relative; }
+  .back-button {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 5px;
+    background: #5a2400;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .back-button:hover { opacity: 0.9; }
+</style>
+
 </head>
 <body>
 
-  <!-- Hermes Logo Header -->
+   <!-- Hermes Logo Header -->
   <header style="text-align:left; margin-bottom: 30px;">
     <a href="#hs-admin" style="text-decoration: none; display: inline-block;">
       <div style="display: flex; align-items: center; justify-content: center;">
@@ -203,6 +220,7 @@
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
       <p id="modalText"></p>
       <div id="modalOmsLink" style="display: none;">
         <a href="https://1drv.ms/x/c/62954c3ae818d381/EYHTGOg6TJUggGJ08gIAAAABtdMjjx3YCXUfYxx4EM1Xnw?e=AeYao7" target="_blank">Access OMS System</a>
@@ -530,6 +548,7 @@
 <div id="modalHYDRUS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">7-HYDRUS</div>
         </header>
@@ -554,6 +573,7 @@
 <div id="modalPHOENIX" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">7-PHOENIX</div>
         </header>
@@ -578,6 +598,7 @@
 <div id="modalAQUILA" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">7-AQUILA</div>
         </header>
@@ -602,6 +623,7 @@
  <div id="modalLYNX" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">7-LYNX</div>
         </header>
@@ -627,6 +649,7 @@
 <div id="modalAMETHYST" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">8-AMETHYST</div>
         </header>
@@ -650,6 +673,7 @@
 <div id="modalSAPPHIRE" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">8-SAPPHIRE</div>
         </header>
@@ -673,6 +697,7 @@
 <div id="modalGARNET" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">8-GARNET</div>
         </header>
@@ -696,6 +721,7 @@
 <div id="modalEMERALD" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">8-EMERALD</div>
         </header>
@@ -723,6 +749,7 @@
 <div id="modalCALLISTO" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">9-CALLISTO</div>
         </header>
@@ -750,6 +777,7 @@
 <div id="modalEUROPA" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">9-EUROPA</div>
         </header>
@@ -778,6 +806,7 @@
 <div id="modalGANYMEDE" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">9-GANYMEDE</div>
         </header>
@@ -807,6 +836,7 @@
 <div id="modalARTEMIS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">10-ARTEMIS</div>
         </header>
@@ -833,6 +863,7 @@
 <div id="modalACHELOUS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">10-ACHELOUS</div>
         </header>
@@ -860,6 +891,7 @@
 <div id="modalARES" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">10-ARES</div>
         </header>
@@ -888,6 +920,7 @@
 <div id="modalJOBS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-JOBS</div>
         </header>
@@ -911,6 +944,7 @@
 <div id="modalFRANKLIN" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-McCARTHY</div>
         </header>
@@ -934,6 +968,7 @@
 <div id="modalRIZAL" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-RIZAL</div>
         </header>
@@ -959,6 +994,7 @@
 <div id="modalEINSTEIN" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-EINSTEIN</div>
                 <!--<button onclick="modalECR2.back()">Go Back</button>-->
@@ -980,13 +1016,14 @@
 </div>        
 
 
+
 <div id="modalTECSON" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
+     <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-TECSON</div>
-                <!--<button onclick="modalECR2.back()">Go Back</button>-->
-        </header>
+            </header>
         <div class="grid">
           
           <div class="grade"> <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBzGb9iQHhoQ4_KRhkBcPrPATm43Ph8kmowfMXxpt42F8I " target="_blank">EFFECTIVE COMMUNICATION              </a></div>
@@ -1003,12 +1040,14 @@
         </div>
       </div>
 </div>      
+
       
          <!-- GRADE 12-->       
         
 <div id="modalEQUINOX" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">GAS 12-EQUINOX</div>
         </header>
@@ -1032,6 +1071,7 @@
 <div id="modalMERAKI" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">AMB 12-MERAKI</div>
         </header>
@@ -1055,6 +1095,7 @@
 <div id="modalVERITAS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">HUMMS 12-VERITAS</div>
         </header>
@@ -1078,6 +1119,7 @@
 <div id="modalSTELLARIS" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">STEM 12-STELLARIS</div>
         </header>
@@ -1106,6 +1148,7 @@
 <div id="modalJOBS2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-JOBS</div>
         </header>
@@ -1130,6 +1173,7 @@
 <div id="modalFRANKLIN2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-FRANKLIN</div>
         </header>
@@ -1154,6 +1198,7 @@
 <div id="modalRIZAL2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-RIZAL</div>
         </header>
@@ -1179,6 +1224,7 @@
 <div id="modalEINSTEIN2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-EINSTEIN</div>
                 <button onclick="history.back()">Go Back</button>
@@ -1205,6 +1251,7 @@
 <div id="modalEQUINOX2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">GAS 12-EQUINOX</div>
         </header>
@@ -1226,6 +1273,7 @@
 <div id="modalMERAKI2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">AMB 12-MERAKI</div>
         </header>
@@ -1247,6 +1295,7 @@
 <div id="modalVERITAS2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">HUMMS 12-VERITAS</div>
         </header>
@@ -1268,6 +1317,7 @@
 <div id="modalSTELLARIS2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">STEM 12-STELLARIS</div>
         </header>
@@ -1289,6 +1339,7 @@
 <div id="modalNEXA2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">ICT 12-NEXA</div>
         </header>
@@ -1310,6 +1361,7 @@
 <div id="modalSOLANA2" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">HE 12-SOLANA</div>
                 <button onclick="history.back()">Go Back</button>   
@@ -1345,11 +1397,6 @@
 </body>
 
 </html>
-
-
-
-
-
 
 
 
