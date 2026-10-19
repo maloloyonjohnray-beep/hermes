@@ -21,7 +21,8 @@ const modalIds = [
 'modalVERITAS','modalSTELLARIS','modalNEXA','modalSOLANA',
 'modalTECSON','modalJOBS2','modalFRANKLIN2','modalRIZAL2',
 'modalEINSTEIN2','modalEQUINOX2','modalMERAKI2','modalVERITAS2',
-'modalSTELLARIS2','modalNEXA2','modalSOLANA2'
+'modalSTELLARIS2','modalNEXA2','modalSOLANA2', 'modalTECSON2', 'modalJHSRawScore',
+'modalSHSRaw1stScore'
 ];
 const mainModalPanels = [
 'modalGrades',
@@ -31,6 +32,7 @@ const mainModalPanels = [
 'modalDocuments',
 'modalLIS',
 'modalECR',
+'modalECR1',
 'modalECR2'
 ];
 // Parent relationships for the E-Class Record sub-modals.
@@ -38,12 +40,14 @@ const parentModal = {
 HYDRUS:'ECR', PHOENIX:'ECR', AQUILA:'ECR', LYNX:'ECR',
 AMETHYST:'ECR', SAPPHIRE:'ECR', GARNET:'ECR', EMERALD:'ECR',
 CALLISTO:'ECR', GANYMEDE:'ECR', EUROPA:'ECR', ACHELOUS:'ECR',
-ARTEMIS:'ECR', ARES:'ECR', JOBS:'ECR', FRANKLIN:'ECR',
-RIZAL:'ECR', EINSTEIN:'ECR', EQUINOX:'ECR', MERAKI:'ECR',
-VERITAS:'ECR', STELLARIS:'ECR', NEXA:'ECR', SOLANA:'ECR',
+ARTEMIS:'ECR', ARES:'ECR', JOBS:'ECR1', FRANKLIN:'ECR1',
+RIZAL:'ECR1', EINSTEIN:'ECR1', EQUINOX:'ECR1', MERAKI:'ECR1',
+VERITAS:'ECR1', STELLARIS:'ECR1', NEXA:'ECR', SOLANA:'ECR',
 TECSON:'ECR2', JOBS2:'ECR2', FRANKLIN2:'ECR2', RIZAL2:'ECR2',
 EINSTEIN2:'ECR2', EQUINOX2:'ECR2', MERAKI2:'ECR2',
-VERITAS2:'ECR2', STELLARIS2:'ECR2', NEXA2:'ECR2', SOLANA2:'ECR2'
+VERITAS2:'ECR2', STELLARIS2:'ECR2', NEXA2:'ECR2', SOLANA2:'ECR2', TECSON2:'ECR2',
+JHSRS:'RawScore', SHSRS1stSem:'RawScore'
+
 };
 const modalPanelMap = {
 'CONSOLIDATED GRADES':'modalGrades',
@@ -53,6 +57,7 @@ const modalPanelMap = {
 'DOCUMENTS':'modalDocuments',
 'LIS COORDINATOR':'modalLIS',
 'ECR':'modalECR',
+'ECR1':'modalECR1',
 'ECR2':'modalECR2',
 HYDRUS:'modalHYDRUS', PHOENIX:'modalPHOENIX', AQUILA:'modalAQUILA',
 LYNX:'modalLYNX', AMETHYST:'modalAMETHYST', SAPPHIRE:'modalSAPPHIRE',
@@ -66,7 +71,8 @@ TECSON:'modalTECSON', JOBS2:'modalJOBS2', FRANKLIN2:'modalFRANKLIN2',
 RIZAL2:'modalRIZAL2', EINSTEIN2:'modalEINSTEIN2',
 EQUINOX2:'modalEQUINOX2', MERAKI2:'modalMERAKI2',
 VERITAS2:'modalVERITAS2', STELLARIS2:'modalSTELLARIS2',
-NEXA2:'modalNEXA2', SOLANA2:'modalSOLANA2'
+NEXA2:'modalNEXA2', SOLANA2:'modalSOLANA2', TECSON2:'modalTECSON2',
+JHSRS:'modalJHSRawScore', SHSRS1stSem:'modalSHSRaw1stScore'
 };
 let currentModal = null;
 let modalHistory = [];
