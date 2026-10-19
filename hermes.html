@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>School System Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hermes.css">
 
 <style>
   .modal-content { position: relative; }
@@ -107,11 +107,15 @@
       </div>
           
       <div class="card" onclick="openModal('ECR')">
-        📁 <span>E-Class Record</span>
+        📁 <span>JHS E-Class Record</span>
+      </div>
+      
+      <div class="card" onclick="openModal('ECR1')">
+        📁 <span>SHS E-Class Record 1st Sem</span>
       </div>
         
-     <!-- <div class="card" onclick="openModal('ECR2')">
-        📁 <span>E-Class Record 2nd Sem </span>
+ <!--     <div class="card" onclick="openModal('ECR2')">
+        📁 <span>SHS E-Class Record 2nd Sem </span>
       </div> -->
         
 <!--
@@ -307,115 +311,159 @@
         
         
 <!--        RAW SCORE AREA-->
-        <div id="modalRawScore" style="display: none;">
-        <header>
-                     <div class="title">RAW SCORES</div>
+<div id="modalJHSRawScore" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
+            <header>
+                     <div class="title">JHS RAW SCORE</div>
         </header>
-
         <div class="grid">
-          <!-- Grade 7 -->
+          <!-- ARALING PANLIPUNAN -->
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAmkwVmpG5vSI4ZRs_tPXLEAZeo7vOCHCzotGpPj5gePNE" target="_blank">[ARALING PANLIPUNAN 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC2rLpG66Q-To51WFD9-C3jATncXyJPDkrHypw9ybpjpbQ " target="_blank">[ARALING PANLIPUNAN 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCScHdHBho2Qb3rC26Bb1xYAaJ6dI6LzauUuf6ndbk82jg " target="_blank">[ARALING PANLIPUNAN 9]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC4bwCaXpUkT6HMRKOq5S-CAY0j4rKdnn2whLFosq0Fles " target="_blank">[ARALING PANLIPUNAN 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDsKlUm9RThT4CVVnn63k7UAd5TGAUWN8MIy8fK8xqazPI " target="_blank">[MABISANG KOMUNIKASYON]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDV8Ma-dNmhTYRvCRH0Otb3AV6Ld1NBw0QmjVdAZDB_PCY " target="_blank">[APPLIED ECONOMICS 12]</a></div>
-
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBP53jjIXDfQ6qoKLEucnujAVF4I7HkLgHDXDDhfSt2tVU " target="_blank">[ENGLISH 7]</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+          <!-- ENGLISH -->
+           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBP53jjIXDfQ6qoKLEucnujAVF4I7HkLgHDXDDhfSt2tVU " target="_blank">[ENGLISH 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAEcG7ZxIXbTbKTqn1bNyuoAU_A2zGk22JZ3Nc0Gp-ciMY " target="_blank">[ENGLISH 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCEpO0N3uD2SLxSFD_QZhCQAXmHswzQEYoEiI9n49asZvM " target="_blank">[ENGLISH 9]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBSRKIAfogRTpecyGIzJakRAUir1axZsWD0fO2NrbWRtrM " target="_blank">[ENGLISH 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDs28Ho4h3FSZDsAy1Xq_ZoAdtaSaJj3rPhYdiUFwNhIpQ " target="_blank">[PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC37cZvHqx4S7mYPHxvCi20AbJexnzxLphVjGzMwt3wxRY " target="_blank">[PAGSULAT SA FILIPINO SA PILING LARANG 12]</a></div>
-
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+          <!-- FILIPINO -->
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAlI-vWU-pORouVI9Px6nLPAY18PVXOifS_xZtjKyX4GF4 " target="_blank">[FILIPINO 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBcQSeDNkg1Rq67tPKmpi-XAcRmzeGbj0Ha01tvqjjwXjU " target="_blank">[FILIPINO 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQADBZI456wNRJ5oYiP6cT6JASQEy7EhaGlq6t0zrrO_wEs " target="_blank">[FILIPINO 9]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBHEqq7Je-pR5WGSdCmOLR7AQUF0Sy5_Y7QExPJcgchahY " target="_blank">[FILIPINO 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCayLAoHO4IQoqKFbcuU110AefNVm5gOIcCnxvYmp3aN-E " target="_blank">[EARTH AND SPACE SCIENCE 1]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBclLCdcBaYRY5Ko75Pt4WbAWumkkK4vTBaENJl4aFb5gc " target="_blank">[PHILIPPINE POLITICS AND GOVERNANCE 12]</a></div>
-
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4y3I1DnqxQ4DvLgsZg0sGAW19WCm-2c2FoNrvMaZM7GU " target="_blank">[MAPEH 7]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCjq4NyxqnfT6nFxax6tbUYAZYa-hiK71vchs1ywwXC-is " target="_blank">[MAPEH 8]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAwCQhbO0cASJ9K8UJHU-kXAUWQ8gBbFKlKGlyQ2dRMqp0 " target="_blank">[MAPEH 9]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC4F2VQRg5uQ4--HxjpzCG4AfDX_OywqqSoXGyHP_AlTvc " target="_blank">[MAPEH 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQASWpDYj6pmS6l_mdbrF08_AZjYeR4t0JE7tJaMmOxGfV4 " target="_blank">[FINITE MATHEMATICS 1]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCj3YAMp2DKQKZx1pg0HZdgAct4jRKpYSHfthSc86VOFRM " target="_blank">[CONTEMP. PHILIPPINE ARTS 12]</a></div>
-
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQArKVAAhZ3VQb0KGxXK4_84AXnDMEmxAAunqW8F7pQNSVs " target="_blank">[MATH 7]</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+         <!-- MATH -->
+         <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQArKVAAhZ3VQb0KGxXK4_84AXnDMEmxAAunqW8F7pQNSVs " target="_blank">[MATH 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAFfuLoUezEQpq9Egxqpun1ASpbfbOCkin8YkPdBlNYs7c " target="_blank">[MATH 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDewrpNqLB5QpbCvCRWg2MsAVsVv7a0MoHvHn3AJG2abhQ " target="_blank">[MATH 9]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAZeSI1mG5_RaA5Po9kRh4EATWJE8dzY6WlRLA0JNqgtW8 " target="_blank">[MATH 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQANqNA0gzg3Q7VmuVjdRfhLAQOzFzU0bhXOaGOj4hOd0Fo " target="_blank">[BUSINESS 1]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDl2oVjHKbHTqUncexRh-7RAQITLKW1fJvt-D0MvM62BSQ " target="_blank">[MEDIA & INFORMATION LIT. 12]</a></div>
-            
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAZeSI1mG5_RaA5Po9kRh4EATWJE8dzY6WlRLA0JNqgtW8 " target="_blank">[MATH 10]</a></div> 
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+           <!-- SCIENCE -->
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD5wxNLle_USb7Ie-K3KG8YARcpJsc6535pAJcCgLyIqwc " target="_blank">[SCIENCE 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBxIMjFG_eNSr1M2tAmzao1ASgY_l7uZBe8XaNFX2wsEqA " target="_blank">[SCIENCE 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBOKCV0GeZvSoKgq85JnQCJARK_E7IbIDLk1t0c1ijLib0 " target="_blank">[SCIENCE 9]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC-NG6h5ngrSq_RLOleGgd5Afd1reigOZKPlez38_OxWrQ " target="_blank">[SCIENCE 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCBFs0gPHeiSqfPoJj3rFQDASTzXHwUtHoAKvp8-9jPzs4 " target="_blank">[INTRODUCTION TO ORGANIZATION AND MANAGEMENT]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBF-haOOcqVQ4yOWqZQsiO4AXSQE57XWDS5VgCMZ26mP8o " target="_blank">[PHYSICAL EDUCATION(3) 12]</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
           
+           <!-- TLE -->
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDOeTZYqAZiTaj2BY4SxXPRAeLcCjAs2r1VF6Sqf-s6leg " target="_blank">[TLE 7]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB6gCvjyioMT5_9QQ5gKCmaAeH9x6tAu5SI_cEOxnt-FPI " target="_blank">[TLE 8]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDRqUv5txYDSpyc0iphBUUfAama64bbtQt6E-iGctmr37o " target="_blank">[TLE 9]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQA9pjUpnD_VSqYLCg6V1WqtAXaWWyvfPgopSJB_QrZ5mpw " target="_blank">[TLE 10]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4ofEQdn6SQr7QzfPhS5XFAbYH016FufMvX8NLvbn2gZU " target="_blank">[VISUAL GRAPHIC DESIGN]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD117cY5uj7TqGFn3wG4GXSAcBNReJEfNgYfHOVNQuPEYo " target="_blank">[PERSONAL DEVELOPMENT 12]</a></div>
-            
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDil-V6358sRK3Kdwc7nFIjAY97dCFwTZih2Xuqd1wVe8o " target="_blank">[VALUES EDUCATION 7]</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+           <!-- VALUES EDUCATION -->
+           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDil-V6358sRK3Kdwc7nFIjAY97dCFwTZih2Xuqd1wVe8o " target="_blank">[VALUES EDUCATION 7]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDifYdUyLxhQ77B2-R-7JqcAWOr85h4FGtg01rXOZGpy8w " target="_blank">[VALUES EDUCATION 8]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB-Xui-8-5lSb2bavF3B0bIAd6tVT8V3lkDUfLXtqpqqTQ " target="_blank">[VALUES EDUCATION 9]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAseoJoGvBFSqZd1niSk9ZWAYRrYLjozqbhvmDHK-8xg5c " target="_blank">[VALUES EDUCATION 10]</a></div>
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB88TvucaA9Q7ncUCjxMK_RAZDMotj8BIxIccWQt--Qa-M " target="_blank">[ ARTS 1]</a></div>
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAhPh1c9HusT7_dTSyh_0Q8ATsITnyltC01Cqlpi2ehZkM " target="_blank">[TRENDS, NETWORKS, AND CRITICAL THINKING IN THE 21ST CENTURY 12]</a></div>
-            
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAIzkHV5V43Trsghs1kSgCvAUGoxYWF1liunlRQ9H8YjA8 " target="_blank">[HGP 7]</a></div>
+           <div class="grade"><a href=" " target="_blank"></a></div>
+          
+          <!-- MAPEH -->
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4y3I1DnqxQ4DvLgsZg0sGAW19WCm-2c2FoNrvMaZM7GU " target="_blank">[MAPEH 7]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCjq4NyxqnfT6nFxax6tbUYAZYa-hiK71vchs1ywwXC-is " target="_blank">[MAPEH 8]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAwCQhbO0cASJ9K8UJHU-kXAUWQ8gBbFKlKGlyQ2dRMqp0 " target="_blank">[MAPEH 9]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC4F2VQRg5uQ4--HxjpzCG4AfDX_OywqqSoXGyHP_AlTvc " target="_blank">[MAPEH 10]</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+          <!-- HGP -->
+           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAIzkHV5V43Trsghs1kSgCvAUGoxYWF1liunlRQ9H8YjA8 " target="_blank">[HGP 7]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBLZetg0fFeQYA8PB9t8bEvAQ1-SwmaBm_qpi5_LsJP-j4 " target="_blank">[HGP 8]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQALGfJREuVURobmvykMoWIzAeCSotBYi28EsY9rtVKAzx4 " target="_blank">[HGP 9]</a></div>
           <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAEHfYWDIoMTaOgqiT8zzg3AdeWea_7ayQwZrrsP4CDDhQ " target="_blank">[HGP 10]</a></div>
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCuTII5kzRxTrHdZG-H8a_vAfbCHKxYKh1aTYd1Z88T9DM " target="_blank">[BIOLOGY 1]</a></div>
-          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBkuq9P1A3SRKtgCMeHsNUzAUNkYjT2OcFPItxKZ1tknOQ " target="_blank">[GENERAL BIOLOGY 12]</a></div>
-            
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDY5aMtwilnS7z8YJN8ilmMAdQBUvT6pMrxLgpEJHky5I4 " target="_blank">[CHEMISTRY 1]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAscHmm3N3kSa307s3fCrVKAQpwnK-sph63apDF4eMQT1M " target="_blank">[GENERAL CHEMISTRY (2) 12]</a></div>
-            
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC1YseC_KqZR6z3sGg6RMG0Aa8DgzSr6aZ0OKFWgAm7i2o " target="_blank">[LEADERSHIP IN MANAGEMENT AND ARTS]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC8vRk2-hjzRodHK5Cs78TyAdBzDq3imjwBOa2tQBwDP1g " target="_blank">[GENERAL PHYSICS (1) 12]</a></div>
-            
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDidU2YyN0xSY4QS0Nq4wIWAVobD-UajyiXKfuXmXOxEdc " target="_blank">[HGP 11]</a></div>
-          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBm9nGMm1-0SLd4BU03dURjAWMA2yfwPwT5YpTgoiaPN7U " target="_blank">[FUNDAMENTALS OF ABM (2) 12]</a></div>
-            
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          
+      </div>
+   </div>          
+</div>          
+      
+      
+      
+<div id="modalSHSRaw1stScore" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
+            <header>
+                     <div class="title">SHS RAW SCORE</div>
+        </header>
+        <div class="grid">     
+      
+          <!-- Grade 11 -->
+          
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDsKlUm9RThT4CVVnn63k7UAd5TGAUWN8MIy8fK8xqazPI " target="_blank">[MABISANG KOMUNIKASYON]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDs28Ho4h3FSZDsAy1Xq_ZoAdtaSaJj3rPhYdiUFwNhIpQ " target="_blank">[PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO]</a></div>
           <div class="grade">RAW SCORES  SY2026-27<a href="https://1drv.ms/x/c/62954c3ae818d381/IQBsV_uFk5ddTJAHL7Xiye1wAS7gAzfwf92E0ChtGgAejD4 " target="_blank"> [GENERAL MATHEMATICS]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27<a href="https://1drv.ms/x/c/62954c3ae818d381/IQAW5dRA_-aYTYkeQulBTtSyAVbGLlDq0G647qyNaZQxW40 " target="_blank"> [GENERAL SCIENCE]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCayLAoHO4IQoqKFbcuU110AefNVm5gOIcCnxvYmp3aN-E " target="_blank">[EARTH AND SPACE SCIENCE 1]</a></div>
+           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQASWpDYj6pmS6l_mdbrF08_AZjYeR4t0JE7tJaMmOxGfV4 " target="_blank">[FINITE MATHEMATICS 1]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQANqNA0gzg3Q7VmuVjdRfhLAQOzFzU0bhXOaGOj4hOd0Fo " target="_blank">[BUSINESS 1]</a></div>
+         <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCBFs0gPHeiSqfPoJj3rFQDASTzXHwUtHoAKvp8-9jPzs4 " target="_blank">[INTRODUCTION TO ORGANIZATION AND MANAGEMENT]</a></div> 
+         <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4ofEQdn6SQr7QzfPhS5XFAbYH016FufMvX8NLvbn2gZU " target="_blank">[VISUAL GRAPHIC DESIGN]</a></div>
+          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB88TvucaA9Q7ncUCjxMK_RAZDMotj8BIxIccWQt--Qa-M " target="_blank">[ ARTS 1]</a></div>
+          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCuTII5kzRxTrHdZG-H8a_vAfbCHKxYKh1aTYd1Z88T9DM " target="_blank">[BIOLOGY 1]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDY5aMtwilnS7z8YJN8ilmMAdQBUvT6pMrxLgpEJHky5I4 " target="_blank">[CHEMISTRY 1]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC1YseC_KqZR6z3sGg6RMG0Aa8DgzSr6aZ0OKFWgAm7i2o " target="_blank">[LEADERSHIP IN MANAGEMENT AND ARTS]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDidU2YyN0xSY4QS0Nq4wIWAVobD-UajyiXKfuXmXOxEdc " target="_blank">[HGP 11]</a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          <div class="grade"><a href="#" target="_blank"></a></div>
+          
+          <!-- Grade 12 -->
+          
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDV8Ma-dNmhTYRvCRH0Otb3AV6Ld1NBw0QmjVdAZDB_PCY " target="_blank">[APPLIED ECONOMICS 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC37cZvHqx4S7mYPHxvCi20AbJexnzxLphVjGzMwt3wxRY " target="_blank">[PAGSULAT SA FILIPINO SA PILING LARANG 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBclLCdcBaYRY5Ko75Pt4WbAWumkkK4vTBaENJl4aFb5gc " target="_blank">[PHILIPPINE POLITICS AND GOVERNANCE 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCj3YAMp2DKQKZx1pg0HZdgAct4jRKpYSHfthSc86VOFRM " target="_blank">[CONTEMP. PHILIPPINE ARTS 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDl2oVjHKbHTqUncexRh-7RAQITLKW1fJvt-D0MvM62BSQ " target="_blank">[MEDIA & INFORMATION LIT. 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBF-haOOcqVQ4yOWqZQsiO4AXSQE57XWDS5VgCMZ26mP8o " target="_blank">[PHYSICAL EDUCATION(3) 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD117cY5uj7TqGFn3wG4GXSAcBNReJEfNgYfHOVNQuPEYo " target="_blank">[PERSONAL DEVELOPMENT 12]</a></div>
+          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAhPh1c9HusT7_dTSyh_0Q8ATsITnyltC01Cqlpi2ehZkM " target="_blank">[TRENDS, NETWORKS, AND CRITICAL THINKING IN THE 21ST CENTURY 12]</a></div>
+          <div class="grade">RAW SCORES  SY2025-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBkuq9P1A3SRKtgCMeHsNUzAUNkYjT2OcFPItxKZ1tknOQ " target="_blank">[GENERAL BIOLOGY 12]</a></div>
+          
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAscHmm3N3kSa307s3fCrVKAQpwnK-sph63apDF4eMQT1M " target="_blank">[GENERAL CHEMISTRY (2) 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC8vRk2-hjzRodHK5Cs78TyAdBzDq3imjwBOa2tQBwDP1g " target="_blank">[GENERAL PHYSICS (1) 12]</a></div>
+          <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBm9nGMm1-0SLd4BU03dURjAWMA2yfwPwT5YpTgoiaPN7U " target="_blank">[FUNDAMENTALS OF ABM (2) 12]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC_-iroM0ldR76nYxFfZ4gMAdHe9Lm3ZZEcPRsSwGlF2Fc " target="_blank">[PRINCIPLES OF MARKETING 12]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCO3HFPR1DaSJB6GIZgWv65AfubSmUPaEXyuexq3rVnf00 " target="_blank">[CREATIVE NON FICTION 12]</a></div>
-            
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade"><a href="#" target="_blank"></a></div>
-          <div class="grade">RAW SCORES  SY2026-27<a href="https://1drv.ms/x/c/62954c3ae818d381/IQAW5dRA_-aYTYkeQulBTtSyAVbGLlDq0G647qyNaZQxW40 " target="_blank"> [GENERAL SCIENCE]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAQSY0Fd906SaWnHqXOyjJRAZ97Zbps3HznxpkfHiR-MIo " target="_blank">[DICIPLINES AND IDEAS IN THE APPLIED SOCIAL SCIENCES 12]</a></div>
           <div class="grade">RAW SCORES  SY2026-27 <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCRHU4b2e1gQb3opTAQvjesAbeWO5qBShZN8S1fF6qaleI " target="_blank">[HOMEROOM GUIDANCE PROGRAM 12]</a></div>
             
          
         </div>
       </div>
-        
+  </div>
+      
+
+      
+      <div id="modalRawScore" style="display: none;">
+        <header>
+                     <div class="title">RAW SCORES</div>
+        </header>
+
+        <div class="grid">
+          <!-- Grade 7 -->
+          <div class="grade" onclick="openModal('JHSRS')">JHS Raw Score</div>
+          <div class="grade" onclick="openModal('SHSRS1stSem')">SHS Raw Score 1st Sem</div>
+          <div class="grade" onclick="openModal('SHSRS2ndSem')">SHS Raw Score 2nd Sem</div>
+
+             
+  </div>
+</div>  
+      
+      
         
 <!-- ECR AREA-->
 <div id="modalECR" style="display: none;">
@@ -430,7 +478,7 @@
           <div class="grade" onclick="openModal('AQUILA')">GRADE 7 - AQUILA</div>
           <div class="grade" onclick="openModal('LYNX')">GRADE 7 - LYNX</div>
           <div class="grade"></div>
-          <div class="grade"></div>
+          
             
           <!-- Grade 8 -->
           <div class="grade" onclick="openModal('AMETHYST')">GRADE 8 - AMETHYST</div>
@@ -438,7 +486,7 @@
           <div class="grade" onclick="openModal('GARNET')">GRADE 8 - GARNET</div>
           <div class="grade" onclick="openModal('EMERALD')">GRADE 8 - EMERALD</div>
           <div class="grade"></div>
-          <div class="grade"></div> 
+          
            
           <!-- Grade 9 -->
           <div class="grade" onclick="openModal('GANYMEDE')">GRADE 9 - GANYMEDE</div>
@@ -446,7 +494,7 @@
           <div class="grade" onclick="openModal('CALLISTO')">GRADE 9 - CALLISTO</div>
           <div class="grade"></div>
           <div class="grade"></div>
-          <div class="grade"></div>    
+             
             
           <!-- Grade 10 -->
           <div class="grade" onclick="openModal('ARTEMIS')">GRADE 10 - ARTEMIS</div>
@@ -454,15 +502,26 @@
           <div class="grade" onclick="openModal('ARES')">GRADE 10- ARES</div>
           <div class="grade"></div>
           <div class="grade"></div>
-          <div class="grade"></div>   
-            
+             
+  </div>
+</div>               
+          
+<!-- ECR 1ST Quarter AREA-->         
+<div id="modalECR1" style="display: none;">
+        <header>
+                     <div class="title">E-CLASS RECORD 1ST SEM</div>
+        </header>
+
+        <div class="grid">      
+          
+          
          <!-- Grade 11 -->
           <div class="grade" onclick="openModal('JOBS')">GRADE 11 - JOBS</div>
           <div class="grade" onclick="openModal('FRANKLIN')">GRADE 11 - McCARTHY</div>
           <div class="grade" onclick="openModal('RIZAL')">GRADE 11- RIZAL</div>
           <div class="grade" onclick="openModal('EINSTEIN')">GRADE 11- EINSTEIN</div>
           <div class="grade" onclick="openModal('TECSON')">GRADE 11- TECSON</div>
-          <div class="grade"></div> 
+           
             
         
          <!-- Grade 12 -->
@@ -471,7 +530,7 @@
           <div class="grade" onclick="openModal('VERITAS')">GRADE 12- VERITAS</div>
           <div class="grade" onclick="openModal('STELLARIS')">GRADE 12- STELLARIS</div>
           <div class="grade"></div>
-          <div class="grade"></div> 
+           
        
         </div>
       </div>        
@@ -491,17 +550,14 @@
           <div class="grade" onclick="openModal('RIZAL2')">GRADE 11- RIZAL</div>
           <div class="grade" onclick="openModal('EINSTEIN2')">GRADE 11- EINSTEIN</div>
           <div class="grade" onclick="openModal('TECSON2')">GRADE 11- TECSON</div>
-          <div class="grade"></div>
-          <div class="grade"></div> 
-            
+                      
         
          <!-- Grade 12 -->
           <div class="grade" onclick="openModal('MERAKI2')">GRADE 12 - MERAKI</div>
           <div class="grade" onclick="openModal('EQUINOX2')">GRADE 12 - EQUINOX</div>
           <div class="grade" onclick="openModal('VERITAS2')">GRADE 12- VERITAS</div>
           <div class="grade" onclick="openModal('STELLARIS2')">GRADE 12- STELLARIS</div>
-          <!--<div class="grade" onclick="openModal('NEXA2')">GRADE 12- NEXA</div>
-          <div class="grade" onclick="openModal('SOLANA2')">GRADE 12- SOLANA</div> -->
+          
             
 
           
@@ -586,19 +642,17 @@
         </header>
         <div class="grid">
           <!-- Grade 7 -->
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCZ-c4QOuDFTLBi1_JzzfWlAfqwZlY9AHWXAxmiAj6F8S4 " target="_blank">ARALING PANLIPUNAN 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQA05QrtKopHRrpswei49mE6AYEi8RKO-8c5UN0wG0av5LY " target="_blank">ENGLISH 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQASDyPduB3eQoDIVAfKocOiAY_eBj_NCoOiHrQ3ieWn9Qk " target="_blank">FILIPINO 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAo7AMBQfCNR5gXF3_7PHvuAZF-WMaghO1vd-arpdslKcY " target="_blank">MAPEH 7</a><br>
-                              <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDJrpENaccVQLSIAU0SNsDmARaZlz1Xzl2xciusLbKrn54?e=UhfYlQ " target="_blank">MUSIC & ARTS</a> <br>
-                              <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBUzStMiyecRqOmzBOdYbWaAVbDXp6U_jupvIdFwcvEeQ0?e=hLyIyP " target="_blank">PE & HEALTH</a>
-          
-          </div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4Itue5FzoRIukDB_H1pTWAbFmY8d-jhisXMaaBQXkDnQ " target="_blank">MATHEMATICS 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBEOxtvVVKaRpDd8e2znTa2ASUwF1MaYMxRQ_S_xKB9-WE " target="_blank">SCIENCE 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCa_qfZePnXRILqLurOUnBnAUUrh8TxJLcCsUvv9tWRH2Y " target="_blank">TLE 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDaadYH5cRhTIDnotx_FqDNAQaCkuSsh9SZFZffHW-G-sY " target="_blank">VALUES EDUCATION 7</a></div>
-          <div class="grade">7-PHOENIX <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD2fucXD6RYQafcW2ZNVzxaAayABN9S4g3Gre2njoA3gJM?e=gIdeMb " target="_blank">HGP 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQCZ-c4QOuDFTLBi1_JzzfWlAfqwZlY9AHWXAxmiAj6F8S4 " target="_blank">ARALING PANLIPUNAN 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQA05QrtKopHRrpswei49mE6AYEi8RKO-8c5UN0wG0av5LY " target="_blank">ENGLISH 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQASDyPduB3eQoDIVAfKocOiAY_eBj_NCoOiHrQ3ieWn9Qk " target="_blank">FILIPINO 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQAo7AMBQfCNR5gXF3_7PHvuAZF-WMaghO1vd-arpdslKcY " target="_blank">MAPEH 7</a><br>
+                  <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDJrpENaccVQLSIAU0SNsDmARaZlz1Xzl2xciusLbKrn54?e=UhfYlQ " target="_blank">MUSIC & ARTS</a> <br>
+                  <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBUzStMiyecRqOmzBOdYbWaAVbDXp6U_jupvIdFwcvEeQ0?e=hLyIyP " target="_blank">PE & HEALTH</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQD4Itue5FzoRIukDB_H1pTWAbFmY8d-jhisXMaaBQXkDnQ " target="_blank">MATHEMATICS 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQBEOxtvVVKaRpDd8e2znTa2ASUwF1MaYMxRQ_S_xKB9-WE " target="_blank">SCIENCE 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQCa_qfZePnXRILqLurOUnBnAUUrh8TxJLcCsUvv9tWRH2Y " target="_blank">TLE 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQDaadYH5cRhTIDnotx_FqDNAQaCkuSsh9SZFZffHW-G-sY " target="_blank">VALUES EDUCATION 7</a></div>
+          <div class="grade"><a href="https://1drv.ms/x/c/62954c3ae818d381/IQD2fucXD6RYQafcW2ZNVzxaAayABN9S4g3Gre2njoA3gJM?e=gIdeMb " target="_blank">HGP 7</a></div>
                                
         </div>
       </div>
@@ -1214,13 +1268,13 @@
           <div class="grade"><a href=" " target="_blank">EFFECTIVE COMMUNICATION</a></div>
           <div class="grade"><a href=" " target="_blank">MABISANG KOMUNIKASYON</a></div>
           <div class="grade"><a href=" " target="_blank">PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO</a></div>
-          <div class="grade"><a href=" " target="_blank">PAGBASA AT PAGSUSURI</a></div>
-          <div class="grade"><a href=" " target="_blank">PHYSICAL EDUCATION 2</a></div>
-          <div class="grade"><a href=" " target="_blank">PHYSICAL SCIENCE</a></div>
-          <div class="grade"><a href=" " target="_blank">PRACTICAL RESEARCH 1 </a></div>
-          <div class="grade"><a href=" " target="_blank">READING AND WRITING</a></div>
-          <div class="grade"><a href=" " target="_blank">STATISTICS AND PROBABILITY</a></div>
-          <div class="grade"><a href=" " target="_blank">UCSP</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL SCIENCE</a></div>
+          <div class="grade"><a href=" " target="_blank">LIFE AND CAREER SKILL</a></div>
+          <div class="grade"><a href=" " target="_blank">HGP 11</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
                       
         </div>
       </div>
@@ -1232,20 +1286,20 @@
       <span class="close" onclick="closeModal()">&times;</span>
       <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
-                     <div class="title">11-FRANKLIN</div>
+                     <div class="title">11-McCARTHY</div>
         </header>
         <div class="grid">
           
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB7LgIhQb8aRb5Zn1nsi5uCAVfFkhVROZIUwnPyhQLQR1I" target="_blank">DRRR</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDHoPElbUOMQasz23EiCxXRAUkG7WB46BiK3ZXaQkiWhPU" target="_blank">ENGLISH FOR ACAD</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDd8Ooq4kXRTKJFdyhNahkkAaqp1SooS8AIcuqhoYgRwVQ" target="_blank">HGP</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBRpTEtu5KYR74zOs-JmIi8AUPXXUr4ehRRrIjaUAtGN3E" target="_blank">PAGBASA AT PAGSUSURI</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAc7OkpzcrBTYoHZkMP_3Q2AXShuNBng_-8t2RIIWFvstg" target="_blank">PHYSICAL EDUCATION 2</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAzIGjUYuaHR745Uq3KbIU-Af7fqPjsFnNebFp1uo12RjE" target="_blank">PHYSICAL SCIENCE</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC3uiHmmapASr1_jRwun7TYAbpGTwAdxRR-Wi2-RIlwnvY" target="_blank">PRACTICAL RESEARCH 1</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDQLypk3esiTZrsHlDiwB0kAXrql3TqqGLjcQt2vBFaaUw" target="_blank">READING AND WRITING</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAbGyzmD6GoT57YUnf3eTOgAZ6PFX2tllkVCNwe1U5rwd4" target="_blank">STATISTICS AND PROBABILITY</a></div>
-          <div class="grade">11-FRANKLIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCWWudUVox_R5snQEr8KTQeATD37zlcpSO0UvzI5dyYncY" target="_blank">UCSP</a></div>
+          <div class="grade"><a href=" " target="_blank">EFFECTIVE COMMUNICATION</a></div>
+          <div class="grade"><a href=" " target="_blank">MABISANG KOMUNIKASYON</a></div>
+          <div class="grade"><a href=" " target="_blank">PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL SCIENCE</a></div>
+          <div class="grade"><a href=" " target="_blank">LIFE AND CAREER SKILL</a></div>
+          <div class="grade"><a href=" " target="_blank">HGP 11</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
                       
         </div>
       </div>
@@ -1261,16 +1315,16 @@
         </header>
         <div class="grid">
           
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQA0V0NqNkDQR4itXIpH02j5AU34g6K3R2KtlaURXVfSZag" target="_blank">CREATIVE WRITING</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB_KZcXD5LOQq-nxs4MwR6eATuc_lLl2d3VPKE2JsP-ZYw" target="_blank">ENGLISH FOR ACAD</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQABYGfPoSCmTo9XeO0hJQn7AXwKrycHzRMtH99kKM72h0I" target="_blank">HGP</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC2DxWZmnr4Tr5FIGVwuYjYAbkXAPuiuBQWiARuWHkK-2o" target="_blank">PAGBASA AT PAGSUSURI</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQC_8dWeE-QNQ7Ezwdjk__q1ATGxKIaOK4PPzHGuhOaa8lA" target="_blank">PHYSICAL EDUCATION 2</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDI6kGX8HWcRYkQ0gYMj8lKAZa0s5pPiFFD4TVLmKJFnVA" target="_blank">PHYSICAL SCIENCE</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBeiQfCiDNyQr--6h6wr9M5AX7qtw7bLDnkmhaUlNf0vJY" target="_blank">PRACTICAL RESEARCH 1</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQApOUtwKgLnSIetRuzIP9LLASnxRsPXIHuxXEQ6YzyWHUE" target="_blank">READING AND WRITING</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBT9CzGR88oTZRn1RjBUhJyAQudtFpyMHFCDRkqHM4qWWc" target="_blank">STATISTICS AND PROBABILITY</a></div>
-          <div class="grade">11-RIZAL <a href="https://1drv.ms/x/c/62954c3ae818d381/IQD_r21WUAVpS4R1Yzwjuf70AbHy5ZYqAtUNQDaHlN708uc" target="_blank">UCSP</a></div>
+          <div class="grade"><a href=" " target="_blank">EFFECTIVE COMMUNICATION</a></div>
+          <div class="grade"><a href=" " target="_blank">MABISANG KOMUNIKASYON</a></div>
+          <div class="grade"><a href=" " target="_blank">PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL SCIENCE</a></div>
+          <div class="grade"><a href=" " target="_blank">LIFE AND CAREER SKILL</a></div>
+          <div class="grade"><a href=" " target="_blank">HGP 11</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
                     
         </div>
       </div>
@@ -1284,24 +1338,48 @@
       <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
             <header>
                      <div class="title">11-EINSTEIN</div>
-                <button onclick="history.back()">Go Back</button>
-        </header>
+            </header>
         <div class="grid">
           
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBxtM5tpkOJTq2pIyA78sA3Ab6i0hH3YT-ppDQUc_WBMrI" target="_blank">BASIC CALCULUS</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDDq3crsvFuQIMBChTc6DDMARHVPC1sK-VNzMmkvBPed1E" target="_blank">DRRR</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCDKR7VLygdTb5p4cna9aJiAdaocbPGRWeVeUnrMc1jrV0" target="_blank">ENGLISH FOR ACAD</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAEgOTe9rgGQ7kl8qC0GxgBAbalYar1HLDz4n4CxbDmXIc" target="_blank">HGP</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAJkatIYeE4So8kqOzceORsAYCFhlr8YkLSmwT9wbKVR6o" target="_blank">PAGBASA AT PAGSUSURI</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQB2VxPg-cNlSoV9PrXQuqySAcZXaR0PFYNYHsScMFaQwG0" target="_blank">PHYSICAL EDUCATION 2</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQBc2pIKgSEIQJAgombrueHiAVVCaHXdnAXQyZKBu1anMgg" target="_blank">PRACTICAL RESEARCH 1</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQCJ0y1Ch8UwTJUSZXKcziRsAVFJBt9B3BuROEmlcKLOwWE" target="_blank">READING AND WRITING</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQDxwvojka3KT4QSQrGEf3jVAX9a9DRVSXfYLx09yGd4avU" target="_blank">STATISTICS AND PROBABILITY</a></div>
-          <div class="grade">11-EINSTEIN <a href="https://1drv.ms/x/c/62954c3ae818d381/IQAWTpVmVtZ-RKbwI-nSZlXEAdrfYMe1srAm9xHXY6ls4VE" target="_blank">UCSP</a></div>
+          <div class="grade"><a href=" " target="_blank">EFFECTIVE COMMUNICATION</a></div>
+          <div class="grade"><a href=" " target="_blank">MABISANG KOMUNIKASYON</a></div>
+          <div class="grade"><a href=" " target="_blank">PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL SCIENCE</a></div>
+          <div class="grade"><a href=" " target="_blank">LIFE AND CAREER SKILL</a></div>
+          <div class="grade"><a href=" " target="_blank">HGP 11</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
                
         </div>
       </div>
-</div>        
+</div>  
+      
+      
+<div id="modalTECSON2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <button type="button" class="back-button" onclick="goBack()" aria-label="Go back">← Back</button>
+            <header>
+                     <div class="title">11-TECSON</div>
+            </header>
+        <div class="grid">
+          
+          <div class="grade"><a href=" " target="_blank">EFFECTIVE COMMUNICATION</a></div>
+          <div class="grade"><a href=" " target="_blank">MABISANG KOMUNIKASYON</a></div>
+          <div class="grade"><a href=" " target="_blank">PAG-AARAL NG KASAYSAYAN AT LIPUNANG PILIPINO</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL MATHEMATICS</a></div>
+          <div class="grade"><a href=" " target="_blank">GENERAL SCIENCE</a></div>
+          <div class="grade"><a href=" " target="_blank">LIFE AND CAREER SKILL</a></div>
+          <div class="grade"><a href=" " target="_blank">HGP 11</a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+          <div class="grade"><a href=" " target="_blank"></a></div>
+               
+        </div>
+      </div>
+</div>      
         
          <!-- GRADE 12-->       
         
