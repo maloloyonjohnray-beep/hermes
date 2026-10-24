@@ -22,7 +22,7 @@ const modalIds = [
 'modalTECSON','modalJOBS2','modalFRANKLIN2','modalRIZAL2',
 'modalEINSTEIN2','modalEQUINOX2','modalMERAKI2','modalVERITAS2',
 'modalSTELLARIS2','modalNEXA2','modalSOLANA2', 'modalTECSON2', 'modalJHSRawScore',
-'modalSHSRaw1stScore'
+'modalSHSRaw1stScore', 'modalSHSRaw2ndScore'
 ];
 const mainModalPanels = [
 'modalGrades',
@@ -46,7 +46,7 @@ VERITAS:'ECR1', STELLARIS:'ECR1', NEXA:'ECR', SOLANA:'ECR',
 TECSON:'ECR2', JOBS2:'ECR2', FRANKLIN2:'ECR2', RIZAL2:'ECR2',
 EINSTEIN2:'ECR2', EQUINOX2:'ECR2', MERAKI2:'ECR2',
 VERITAS2:'ECR2', STELLARIS2:'ECR2', NEXA2:'ECR2', SOLANA2:'ECR2', TECSON2:'ECR2',
-JHSRS:'RawScore', SHSRS1stSem:'RawScore'
+JHSRS:'RawScore', SHSRS1stSem:'RawScore', SHSRS2ndSem:'RawScore'
 
 };
 const modalPanelMap = {
@@ -72,7 +72,7 @@ RIZAL2:'modalRIZAL2', EINSTEIN2:'modalEINSTEIN2',
 EQUINOX2:'modalEQUINOX2', MERAKI2:'modalMERAKI2',
 VERITAS2:'modalVERITAS2', STELLARIS2:'modalSTELLARIS2',
 NEXA2:'modalNEXA2', SOLANA2:'modalSOLANA2', TECSON2:'modalTECSON2',
-JHSRS:'modalJHSRawScore', SHSRS1stSem:'modalSHSRaw1stScore'
+JHSRS:'modalJHSRawScore', SHSRS1stSem:'modalSHSRaw1stScore', SHSRS2ndSem:'modalSHSRaw2ndScore'
 };
 let currentModal = null;
 let modalHistory = [];
